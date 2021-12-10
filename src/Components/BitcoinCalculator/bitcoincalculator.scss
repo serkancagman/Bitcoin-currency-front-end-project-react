@@ -1,0 +1,97 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+.calculator {
+  height: 197px;
+  position: relative;
+  background-image: url(../../images/cal-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .calculator-area {
+    z-index: 10;
+    position: absolute;
+    top: -75px;
+    left: 0;
+    right: 0;
+    .container-lg {
+      .cal {
+        background-color: $maincolor;
+        color: #fff;
+        padding: 4rem 1rem;
+        padding-top: 1rem !important;
+      }
+    }
+  }
+}
+.cal-header {
+  font-size: 45px;
+  font-weight: 700;
+  span {
+    color: $thirthcolor;
+  }
+}
+.cal-text {
+  color: $statinfoColor;
+  margin: 20px 0;
+}
+
+#bitcoin {
+  border: 1px solid #2d2d2d;
+  background-color: $secondcolor;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  width: 230px;
+  height: 45px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+#money {
+  border: 1px solid #2d2d2d;
+  background-color: $secondcolor;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  width: 230px;
+  height: 45px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+.data-cal-info {
+  color: $statinfoColor;
+}
+
+select {
+  text-align: center;
+  border: none;
+  height: 45px;
+  outline: none;
+  margin: 0 !important;
+  background-color: $thirthcolor;
+  color: #fff;
+  font-weight: 600;
+  vertical-align: 1px;
+}
+
+.cal-icon {
+  height: 45px;
+  width: 70px;
+  background-color: $thirthcolor;
+  svg {
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,55 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+.news {
+  background-color: $maincolor;
+}
+
+.news-area {
+  position: relative;
+  .new-title {
+    color: $statinfoColor;
+  }
+  .new-header {
+    color: #fff;
+  }
+  .new-date {
+    background-color: $bitcoinnews;
+    backdrop-filter: blur(2px);
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 20px;
+    color: #fff;
+    h6 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .new-button {
+    width: 150px;
+    padding: 10px 0;
+    outline: none;
+    border: 2px solid transparent;
+    background-color: $thirthcolor;
+    color: #fff;
+    transition: $transition;
+    font-weight: 600;
+
+    &:hover {
+      background-color: transparent;
+      border: 2px solid $thirthcolor;
+      color: $thirthcolor;
+    }
+  }
+}

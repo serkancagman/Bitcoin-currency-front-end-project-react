@@ -1,0 +1,156 @@
+.customize {
+  position: fixed;
+  z-index: 99999;
+  top: 30%;
+  left: 0;
+}
+
+.customize .open-button {
+  background-color: #1d1d1d;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #363636;
+  border-left: 0;
+}
+
+.customize .open-button svg {
+  -webkit-animation: rotateGear 2s linear infinite;
+          animation: rotateGear 2s linear infinite;
+}
+
+@-webkit-keyframes rotateGear {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateGear {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.style-menu {
+  width: 200px;
+}
+
+.style-header {
+  border-bottom: 1px solid #aaa;
+  padding: 5px 0;
+}
+
+.gold-color {
+  color: #fd961a;
+}
+
+.blue-select {
+  color: #0095EB;
+}
+
+.body-style {
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(aqua), to(skyblue));
+  background: linear-gradient(aqua, skyblue);
+  position: relative;
+  cursor: pointer;
+}
+
+.body-style.night {
+  background: -webkit-gradient(linear, left top, left bottom, from(midnightblue), to(rebeccapurple));
+  background: linear-gradient(midnightblue, rebeccapurple);
+}
+
+.notch {
+  width: 35px;
+  height: 35px;
+  top: 2.5px;
+  left: 2.5px;
+  border-radius: 50%;
+  position: absolute;
+  background: yellow;
+  -webkit-box-shadow: 0 0 5px yellow;
+          box-shadow: 0 0 5px yellow;
+  z-index: 1;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.night > .notch {
+  background: whitesmoke;
+  -webkit-box-shadow: 0 0 5px whitesmoke;
+          box-shadow: 0 0 5px whitesmoke;
+  -webkit-transform: translate(40px, 0);
+          transform: translate(40px, 0);
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  background: whitesmoke;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.shape.sm {
+  width: 25px;
+  height: 3px;
+  top: 50%;
+  left: 60%;
+}
+
+.shape.md {
+  width: 35px;
+  height: 6px;
+  top: 25%;
+  left: 25%;
+  z-index: 2;
+}
+
+.shape.lg {
+  width: 40px;
+  height: 7px;
+  bottom: 5px;
+  left: 25%;
+}
+
+.night .shapes .shape.sm {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  -webkit-transform: translate(-20px, 0);
+          transform: translate(-20px, 0);
+}
+
+.night .shapes .shape.sm:first-of-type {
+  -webkit-transform: translate(-35px, -5px);
+          transform: translate(-35px, -5px);
+}
+
+.night .shapes .shape.md {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+.night .shapes .shape.lg {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  -webkit-transform: translate(-5px, 0);
+          transform: translate(-5px, 0);
+}
+/*# sourceMappingURL=stylesite.css.map */

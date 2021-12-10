@@ -1,0 +1,54 @@
+.news {
+  background-color: #1d1d1d;
+}
+
+.news-area {
+  position: relative;
+}
+
+.news-area .new-title {
+  color: #aaa;
+}
+
+.news-area .new-header {
+  color: #fff;
+}
+
+.news-area .new-date {
+  background-color: #0a0a0a71;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-bottom-right-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px 20px;
+  color: #fff;
+}
+
+.news-area .new-date h6 {
+  margin: 0;
+}
+
+.news-area .new-date p {
+  margin: 0;
+}
+
+.news-area .new-button {
+  width: 150px;
+  padding: 10px 0;
+  outline: none;
+  border: 2px solid transparent;
+  background-color: #fd961a;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-weight: 600;
+}
+
+.news-area .new-button:hover {
+  background-color: transparent;
+  border: 2px solid #fd961a;
+  color: #fd961a;
+}
+/*# sourceMappingURL=bitcoinnews.css.map */

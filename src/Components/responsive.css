@@ -1,0 +1,402 @@
+body {
+  height: 200vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-title {
+  text-align: center;
+  color: #aaa;
+  margin: 0;
+}
+
+.line {
+  width: 20px;
+  margin: 0 20px;
+  height: 2px;
+  background-color: #fd961a;
+}
+
+@media only screen and (max-width: 1200px) {
+  .login-btn {
+    width: 90px !important;
+  }
+  .register-btn {
+    width: 100px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .price-container-all {
+    margin: 10px 0;
+  }
+  .about-inner-header {
+    text-align: center;
+    margin: 2rem 0 !important;
+  }
+  .about-us-main {
+    padding-top: 26rem !important;
+  }
+  .icon-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .icon-flex .card-info h3 {
+    text-align: center;
+  }
+  .icon-flex .card-info p {
+    text-align: center;
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+  #bitcoin {
+    width: 210px;
+  }
+  #money {
+    width: 210px;
+  }
+  .payment-area {
+    text-align: center;
+  }
+  .main-person {
+    margin: 10px 0;
+  }
+  .new-main {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  .about-inner-header {
+    text-align: center;
+    margin: 2rem 0 !important;
+  }
+  .about-us-main {
+    padding-top: 26rem !important;
+  }
+  .hamburger-menu {
+    display: block;
+    width: 55px;
+    margin: 0;
+  }
+  .icon-flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .icon-flex .card-info h3 {
+    text-align: center;
+  }
+  .icon-flex .card-info p {
+    text-align: center;
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+  .navbar-nav {
+    overflow: auto;
+  }
+  .search-button {
+    display: none;
+  }
+  .header-top-wrapper::before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .navbar {
+    border-bottom: 1 px solid #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    display: none;
+  }
+  .navbar-brand-mobile {
+    display: block;
+    width: 200px;
+  }
+  #bitcoin {
+    width: 150px;
+  }
+  #money {
+    width: 150px;
+  }
+  .payment-area {
+    text-align: center;
+  }
+  .main-person {
+    margin: 10px 0;
+  }
+  .new-main {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 534px) {
+  .status-area {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+  .slide-title {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .about-us-main {
+    padding-top: 33rem;
+  }
+  .about-inner-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .about-inner-text {
+    margin: 20px 0;
+  }
+  .element-result {
+    margin: 20px 0;
+  }
+  .we-are-area {
+    text-align: center;
+  }
+  .calculator-area {
+    top: -121px !important;
+  }
+  .experts {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .new-main {
+    margin: 10px 0;
+  }
+  .come-header {
+    font-size: 30px !important;
+  }
+  .come-title {
+    font-size: 17px !important;
+  }
+  .main-person {
+    margin: 10px 0;
+  }
+  .payment-area {
+    text-align: center;
+  }
+  .our-info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .our-info h4 {
+    margin: 5px 0 !important;
+  }
+  .cal-header {
+    font-size: 25px !important;
+  }
+  #bitcoin {
+    width: 150px !important;
+  }
+  #money {
+    width: 150px !important;
+  }
+  select {
+    width: 70px !important;
+  }
+  .cal-icon {
+    width: 70px;
+  }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 375px) {
+  .slide-title {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .about-us-main {
+    padding-top: 33rem;
+  }
+  .about-inner-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .about-inner-text {
+    margin: 20px 0;
+  }
+  .element-result {
+    margin: 20px 0;
+  }
+  .we-are-area {
+    text-align: center;
+  }
+  .calculator-area {
+    top: -121px !important;
+  }
+  .experts {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .new-main {
+    margin: 10px 0;
+  }
+  .come-header {
+    font-size: 30px !important;
+  }
+  .come-title {
+    font-size: 17px !important;
+  }
+  .main-person {
+    margin: 10px 0;
+  }
+  .payment-area {
+    text-align: center;
+  }
+  .our-info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .our-info h4 {
+    margin: 2px !important;
+  }
+  .cal-header {
+    font-size: 25px !important;
+  }
+  #bitcoin {
+    width: 150px !important;
+  }
+  #money {
+    width: 150px !important;
+  }
+  select {
+    width: 70px !important;
+  }
+  .cal-icon {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .package-header {
+    font-size: 35px !important;
+  }
+  .person-header {
+    font-size: 35px !important;
+  }
+  .slide-title {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .about-us-main {
+    padding-top: 33rem;
+  }
+  .about-inner-header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .about-inner-text {
+    margin: 20px 0;
+  }
+  .element-result {
+    margin: 20px 0;
+  }
+  .we-are-area {
+    text-align: center;
+  }
+  .calculator-area {
+    top: -121px !important;
+  }
+  .experts {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  .new-main {
+    margin: 10px 0;
+  }
+  .come-header {
+    font-size: 30px !important;
+  }
+  .come-title {
+    font-size: 17px !important;
+  }
+  .main-person {
+    margin: 10px 0;
+  }
+  .payment-area {
+    text-align: center;
+  }
+  .our-info {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .our-info h4 {
+    margin: 2px !important;
+  }
+  .cal-header {
+    font-size: 25px !important;
+  }
+  #bitcoin {
+    width: 150px !important;
+  }
+  #money {
+    width: 150px !important;
+  }
+  select {
+    width: 70px !important;
+  }
+  .cal-icon {
+    width: 70px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

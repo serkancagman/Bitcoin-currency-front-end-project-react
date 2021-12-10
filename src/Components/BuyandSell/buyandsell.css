@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.price-container-all {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.flip {
+  -webkit-transform: rotateY(180deg) !important;
+          transform: rotateY(180deg) !important;
+}
+
+.price-wrapper {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d1d1d;
+}
+
+.price-wrapper .quantity {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #e7e7e7;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.price-wrapper .quantity .price-for {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.price-wrapper .price-title {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 550;
+}
+
+.price-wrapper .price-title .price::before {
+  content: "$";
+}
+
+.price-wrapper .buy-btn {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50px;
+  border: 2px solid transparent;
+  background-color: #fd961a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.price-wrapper .buy-btn:hover {
+  border: 2px solid #fd961a;
+  background-color: transparent;
+  color: #fd961a;
+}
+
+.price-wrapper-sell {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d1d1d;
+}
+
+.price-wrapper-sell .quantity {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #e7e7e7;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.price-wrapper-sell .quantity .price-for {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.price-wrapper-sell .price-title {
+  color: #fff;
+  font-size: 2.3rem;
+  font-weight: 550;
+}
+
+.price-wrapper-sell .price-title .price-btc::before {
+  content: "₿";
+}
+
+.price-wrapper-sell .buy-btn {
+  margin-top: 2rem;
+  width: 100%;
+  height: 50px;
+  border: 2px solid transparent;
+  background-color: #fd961a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.price-wrapper-sell .buy-btn:hover {
+  border: 2px solid #fd961a;
+  background-color: transparent;
+  color: #fd961a;
+}
+
+.package {
+  background-color: #0a0a0a;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.package-header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 800;
+}
+
+.package-header span {
+  color: #fd961a;
+}
+
+.buy-sell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buy-sell-area {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #333;
+}
+
+.buy-sell-area span {
+  width: 100%;
+  padding: 11px 0;
+  margin: 0 !important;
+  display: inline-block;
+  color: #fff;
+  cursor: pointer;
+}
+
+.select-buy {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  left: 1px !important;
+}
+
+.select-background {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  background-color: #fd961a;
+  width: 100px;
+  height: 46px;
+  position: absolute;
+  left: 97px;
+  top: 1px;
+  bottom: 0;
+  z-index: -1;
+}
+/*# sourceMappingURL=buyandsell.css.map */

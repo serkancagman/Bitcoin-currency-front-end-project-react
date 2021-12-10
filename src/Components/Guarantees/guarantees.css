@@ -1,0 +1,116 @@
+.guarantees {
+  background-color: #1d1d1d;
+}
+
+.guarantees-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.guarantees-header {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.guarantees-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.guarantees-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #aaa;
+}
+
+.guarantees-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.guarantees-video {
+  background-image: url(../../images/bitkey.jpg);
+  position: relative;
+  background-size: cover contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 625px;
+}
+
+.guarantees-video-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+  text-align: center;
+}
+
+.guarantees-video-title .play-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fd961a;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.guarantees-video-title .play-button:hover {
+  background-color: #fd961a;
+  border: 2px solid transparent;
+}
+
+.guarantees-video-title .play-button:hover .play-icon {
+  color: #000;
+}
+
+.guarantees-video-title .play-button span {
+  text-align: center;
+}
+
+.guarantees-video-title .play-button span .play-icon {
+  color: #fd961a;
+}
+/*# sourceMappingURL=guarantees.css.map */

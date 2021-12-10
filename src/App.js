@@ -1,24 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import AboutUs from "./Components/AboutUs/AboutUs";
+import BitcoinNews from "./Components/BitcoinNews/BitcoinNews";
+import BtcCalculator from "./Components/BitcoinCalculator/BtcCalculator";
+import Experts from "./Components/Experts/Experts";
+import Footer from "./Components/Footer/Footer";
+import Guarantees from "./Components/Guarantees/Guarantees";
+import HeaderMain from "./Components/Header/Header";
+import Package from "./Components/BuyandSell/Package";
+import Slider from "./Components/Banner/Slider";
+import './Components/responsive.css'
+import StyleSite from "./Components/Stylesite/StyleSite";
+import { useState } from "react";
+
 
 function App() {
+
+  const [toggled,setToggled] = useState(true);
+  const handleSwitchTheme = ()=>{
+      setToggled((s)=> !s);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+    <HeaderMain/>
+    <StyleSite
+    toggled={toggled}
+    switchTheme={handleSwitchTheme}
+    />
+    <Slider/>
+    <AboutUs/>
+    <Guarantees/>
+    <Package/>
+    <BtcCalculator/>
+    <Experts/>
+    <BitcoinNews/>
+    <Footer/>
+    
+    </>
   );
 }
 
