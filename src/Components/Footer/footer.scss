@@ -1,0 +1,157 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+.lets-come {
+  width: 100%;
+  height: 300px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    z-index: 1000;
+    border-bottom: 30px solid $secondcolor;
+  }
+  &::before {
+    right: 50%;
+    border-right: 150px solid transparent;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    z-index: 1000;
+    border-bottom: 30px solid $secondcolor;
+  }
+  &::after {
+    border-left: 150px solid transparent;
+  }
+
+  .come-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.315);
+  }
+}
+.come-back-inner {
+  background-color: rgba(0, 0, 0, 0.767);
+  width: 100%;
+  height: 100%;
+}
+.come-words {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .come-header {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #fff;
+
+    span {
+      color: $thirthcolor;
+    }
+  }
+  .come-title {
+    color: $statinfoColor;
+    font-size: 20px;
+  }
+  .register-btn-footer {
+    border: 2px solid $thirthcolor;
+    background-color: $thirthcolor;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+  }
+}
+.come-back {
+  background-image: url(../../images/footer-img.jpg);
+  height: 100%;
+  background-position: 100%;
+  width: 100%;
+}
+
+.footer-links {
+  background-color: $secondcolor;
+  padding: 20px;
+  color: #fff;
+}
+.footer-nav-header {
+  color: $thirthcolor;
+}
+.footer-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  .footer-item {
+    list-style: none;
+    margin: 5px;
+    margin-left: 0 !important;
+
+    .footer-link {
+      font-size: 13px;
+      border-bottom: 1px solid transparent;
+      color: #fff;
+      text-decoration: none;
+      transition: $transition;
+      &:hover {
+        border-bottom: 1px solid #fff;
+      }
+    }
+  }
+}
+.footer-right-header {
+  color: $thirthcolor;
+  font-size: 25px;
+}
+.price-right{
+  &::before {
+    content: "$";
+  }
+}
+.right-footer-title {
+  color: #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.payment-area {
+  border-top: 1px solid $maincolor;
+
+  h5 {
+    padding: 5px;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+}
+.copyright {
+  background-color: $maincolor;
+  color: $statinfoColor;
+  font-size: 15px;
+  h6 {
+    padding: 20px 0;
+  }
+}

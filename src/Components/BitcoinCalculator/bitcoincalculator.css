@@ -1,0 +1,94 @@
+.calculator {
+  height: 197px;
+  position: relative;
+  background-image: url(../../images/cal-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.calculator .calculator-area {
+  z-index: 10;
+  position: absolute;
+  top: -75px;
+  left: 0;
+  right: 0;
+}
+
+.calculator .calculator-area .container-lg .cal {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 4rem 1rem;
+  padding-top: 1rem !important;
+}
+
+.cal-header {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.cal-header span {
+  color: #fd961a;
+}
+
+.cal-text {
+  color: #aaa;
+  margin: 20px 0;
+}
+
+#bitcoin {
+  border: 1px solid #2d2d2d;
+  background-color: #0a0a0a;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  width: 230px;
+  height: 45px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+#money {
+  border: 1px solid #2d2d2d;
+  background-color: #0a0a0a;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  width: 230px;
+  height: 45px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.data-cal-info {
+  color: #aaa;
+}
+
+select {
+  text-align: center;
+  border: none;
+  height: 45px;
+  outline: none;
+  margin: 0 !important;
+  background-color: #fd961a;
+  color: #fff;
+  font-weight: 600;
+  vertical-align: 1px;
+}
+
+.cal-icon {
+  height: 45px;
+  width: 70px;
+  background-color: #fd961a;
+}
+
+.cal-icon svg {
+  margin-top: 5px;
+}
+/*# sourceMappingURL=bitcoincalculator.css.map */

@@ -1,0 +1,68 @@
+.experts {
+  background-color: #0a0a0a;
+  padding-top: 100px;
+  padding-bottom: 5rem;
+}
+
+.person-header {
+  margin: 20px 0;
+  font-size: 45px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.person-header span {
+  color: #fd961a;
+}
+
+.person-area {
+  position: relative;
+  background-color: #1d1d1d;
+}
+
+.person-img {
+  border-bottom: 4px solid #fd961a;
+}
+
+.person-info {
+  padding: 10px 0;
+}
+
+.person-info .name {
+  color: #fff;
+}
+
+.person-info .position {
+  color: #aaa;
+}
+
+.person-social {
+  bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.person-social:hover .social-icons {
+  opacity: 1;
+}
+
+.social-icons {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  opacity: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.363);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.social-icons svg {
+  cursor: pointer;
+  margin: 5px;
+  color: #fd961a;
+}
+/*# sourceMappingURL=experts.css.map */

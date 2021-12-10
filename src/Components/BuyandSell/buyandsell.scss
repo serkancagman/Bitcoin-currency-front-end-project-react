@@ -1,0 +1,179 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+.price-container-all {
+  width: 100%;
+  height: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateY(0);
+  transition: all 0.5s ease-in-out;
+}
+.flip {
+  transform: rotateY(180deg) !important;
+}
+.price-wrapper {
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  align-items: center;
+  background-color: $maincolor;
+  .quantity {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #e7e7e7;
+    letter-spacing: 2px;
+    font-weight: 500;
+    .price-for {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+  .price-title {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 550;
+
+    .price {
+      &::before {
+        content: "$";
+      }
+    }
+  }
+
+  .buy-btn {
+    margin-top: 2rem;
+    width: 100%;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: $thirthcolor;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    transition: $transition;
+    &:hover {
+      border: 2px solid $thirthcolor;
+      background-color: transparent;
+      color: $thirthcolor;
+    }
+  }
+}
+.price-wrapper-sell {
+  transform: rotateY(180deg);
+  transition: $transition;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  align-items: center;
+  background-color: $maincolor;
+  .quantity {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: #e7e7e7;
+    letter-spacing: 2px;
+    font-weight: 500;
+    .price-for {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+  }
+
+  .price-title {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 550;
+
+    .price-btc {
+      &::before {
+        content: "₿";
+      }
+    }
+  }
+
+  .buy-btn {
+    margin-top: 2rem;
+    width: 100%;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: $thirthcolor;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    transition: $transition;
+    &:hover {
+      border: 2px solid $thirthcolor;
+      background-color: transparent;
+      color: $thirthcolor;
+    }
+  }
+}
+.package {
+  background-color: $secondcolor;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+.package-header {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 800;
+  span {
+    color: $thirthcolor;
+  }
+}
+.buy-sell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buy-sell-area {
+  position: relative;
+  z-index: 1;
+  margin: 20px 0;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #333;
+
+  span {
+    width: 100%;
+    padding: 11px 0;
+    margin: 0 !important;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.select-buy {
+  transition: $transition;
+  left: 1px !important;
+}
+.select-background {
+  transition: $transition;
+  background-color: $thirthcolor;
+  width: 100px;
+  height: 46px;
+  position: absolute;
+  left: 97px;
+  top: 1px;
+  bottom: 0;
+  z-index: -1;
+}
