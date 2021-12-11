@@ -1,15 +1,15 @@
 import React from 'react'
 
-export default function GuaranteesBox(props) {
+export default function GuaranteesBox({imgUrl,header,title,toggled}) {
     return (
         <div className="col-md-6">
             <div className="guarantees-item">
-            <img src={props.imgUrl} alt="" />
-            <h3 className="guarantees-header">
-            {props.header}
+            <img src={imgUrl} alt="" />
+            <h3 className={`guarantees-header${toggled ? "" : " text-dark-main"}`}>
+            {header}
             </h3>
-            <p className="guarantees-title">
-            {props.title}
+            <p className={`guarantees-title${toggled ? "" : " text-second-dark"}`}>
+            {title}
             </p>
             </div>
         </div>

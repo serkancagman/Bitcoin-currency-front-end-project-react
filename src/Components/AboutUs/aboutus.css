@@ -1,3 +1,15 @@
+.text-main-dark {
+  color: #0a0a0a !important;
+}
+
+.text-second-dark {
+  color: #1d1d1d !important;
+}
+
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
+
 .about-cards {
   position: relative;
   width: 100%;
@@ -5,6 +17,8 @@
 }
 
 .card-main-header {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   position: absolute;
   top: -70px;
   padding: 40px 10px;
@@ -95,12 +109,15 @@
 }
 
 .element-result-text {
-  color: #aaa;
   margin: 20px 0;
   display: none;
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
+}
+
+.element-result {
+  color: #aaa;
 }
 
 .about-button {
@@ -109,8 +126,8 @@
   width: 200px;
   height: 50px;
   color: #fd961a;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .about-button:hover {
@@ -120,6 +137,8 @@
 
 .about-us {
   background-color: #0a0a0a;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .our-info {

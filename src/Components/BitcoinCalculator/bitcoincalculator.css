@@ -1,3 +1,11 @@
+.text-dark-main {
+  color: #0a0a0a !important;
+}
+
+.text-dark-second {
+  color: #1d1d1d !important;
+}
+
 .calculator {
   height: 197px;
   position: relative;
@@ -16,6 +24,8 @@
 }
 
 .calculator .calculator-area .container-lg .cal {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background-color: #1d1d1d;
   color: #fff;
   padding: 4rem 1rem;

@@ -1,6 +1,24 @@
 .header-top-wrapper {
   background-color: #1d1d1d;
   padding: 1.5rem 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.light-main-bg {
+  background-color: #e7e7e7 !important;
+}
+
+.light-main-font {
+  color: #0a0a0a !important;
+}
+
+.light-title-font {
+  color: #1d1d1d !important;
+}
+
+.light-second-bg {
+  background-color: #E7E7E7 !important;
 }
 
 .navbar-brand-mobile {
@@ -68,8 +86,8 @@
   color: #fd961a;
   text-decoration: none;
   border: 2px solid #fd961a;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .login-area .login-btn:hover {
@@ -100,8 +118,8 @@
   text-decoration: none;
   color: #fff;
   border: 2px solid transparent;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .login-area .register-btn:hover {
@@ -130,6 +148,8 @@
 
 .navbar {
   background-color: #0a0a0a;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,7 +168,7 @@
 }
 
 .navbar-wrapper .navbar-nav .nav-item {
-  padding: 5px 9px;
+  padding: 5px 5px;
   margin: 0px 2px;
   position: relative;
 }
@@ -157,12 +177,12 @@
   font-weight: 600;
   font-size: 14px;
   color: #fff;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .navbar-wrapper .navbar-nav .nav-item .nav-link:hover {
-  color: #fd961a;
+  color: #fd961a !important;
 }
 
 .navbar-wrapper .navbar-nav .nav-item .nav-link svg {
@@ -232,8 +252,8 @@
   overflow: hidden !important;
   position: relative;
   height: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .search-area .search-inputs form #search {

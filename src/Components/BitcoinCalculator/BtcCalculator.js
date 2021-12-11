@@ -2,17 +2,17 @@ import React from "react";
 import { CurrencyBitcoin } from "react-bootstrap-icons";
 import "../BitcoinCalculator/bitcoincalculator.css"
 
-export default function BtcCalculator() {
+export default function BtcCalculator({toggled}) {
   return (
     <section className="calculator">
       <div className="calculator-area">
         <div className="container-lg">
-          <div className="col-md-12 cal">
+          <div className={`cal col-md-12${toggled ? "" : " bg-light"}`}>
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <h3 className="cal-header my-4 text-center">
+              <h3 className={`cal-header my-4 text-center${toggled ? "" : " text-dark-main"}`}>
                 <span>BITCOIN</span> CALCULATOR
               </h3>
-              <p className="cal-text text-center">
+              <p className={`cal-text text-center${toggled ? "" : " text-dark-second"}`}>
                 FIND OUT THE CURRENT BITCOIN VALUE WITH OUR EASY-TO-USE
                 CONVERTER
               </p>

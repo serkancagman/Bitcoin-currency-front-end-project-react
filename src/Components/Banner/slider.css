@@ -54,8 +54,8 @@
   height: 50px;
   margin: 20px;
   font-weight: 600;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .slide-button:hover {

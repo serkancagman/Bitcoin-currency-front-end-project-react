@@ -38,6 +38,9 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .customize{
+    top: 45% !important;
+  }
   .price-container-all{
     margin: 10px 0;
   }
@@ -88,6 +91,9 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+  .customize{
+    top: 45% !important;
+  }
   .about-inner-header{
     text-align: center;
     margin: 2rem 0 !important;
@@ -176,6 +182,9 @@ body {
 
 @media only screen and (max-width: 534px) {
   .status-area {
+    display: none !important;
+  }
+  .customize{
     display: none !important;
   }
 }

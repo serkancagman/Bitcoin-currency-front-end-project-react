@@ -6,11 +6,24 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
-$transition: all 0.3s linear;
+$transition: all 0.2s ease;
 
 .header-top-wrapper {
   background-color: $maincolor;
   padding: 1.5rem 0;
+  transition: $transition;
+}
+.light-main-bg{
+  background-color: rgb(231, 231, 231) !important;
+}
+.light-main-font{
+  color: $secondcolor !important;
+}
+.light-title-font{
+  color: $maincolor !important;
+}
+.light-second-bg{
+  background-color: #E7E7E7 !important;
 }
 .navbar-brand-mobile {
   display: none;
@@ -106,6 +119,7 @@ $transition: all 0.3s linear;
 }
 .navbar {
   background-color: $secondcolor;
+  transition: $transition;
   justify-content: center;
   position: relative;
 }
@@ -117,7 +131,7 @@ $transition: all 0.3s linear;
     flex-direction: row;
 
     .nav-item {
-      padding: 5px 9px;
+      padding: 5px 5px;
       margin: 0px 2px;
       position: relative;
       .nav-link {
@@ -126,7 +140,7 @@ $transition: all 0.3s linear;
         color: #fff;
         transition: $transition;
         &:hover {
-          color: $thirthcolor;
+          color: $thirthcolor !important;
         }
         svg {
           vertical-align: -2px;

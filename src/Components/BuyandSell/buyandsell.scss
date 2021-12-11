@@ -6,7 +6,17 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
-$transition: all 0.3s linear;
+$transition: all 0.2s ease;
+
+.text-second-dark{
+  color: $maincolor !important;
+}
+.text-dark-main{
+  color: $secondcolor !important;
+}
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
 
 .price-container-all {
   width: 100%;
@@ -127,6 +137,7 @@ $transition: all 0.3s linear;
   }
 }
 .package {
+  transition: $transition;
   background-color: $secondcolor;
   padding-top: 5rem;
   padding-bottom: 10rem;
@@ -135,6 +146,7 @@ $transition: all 0.3s linear;
   font-size: 45px;
   line-height: 45px;
   font-weight: 800;
+  color: #fff;
   span {
     color: $thirthcolor;
   }
@@ -151,6 +163,7 @@ $transition: all 0.3s linear;
   width: 200px;
   height: 50px;
   border: 1px solid #333;
+  background-color: $secondcolor;
 
   span {
     width: 100%;

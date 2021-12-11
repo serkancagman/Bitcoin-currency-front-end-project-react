@@ -9,9 +9,9 @@ import iconFive from "../../images/guaranteesicon5.png";
 import iconSix from "../../images/guaranteesicon6.png";
 import { PlayFill } from "react-bootstrap-icons";
 
-export default function Guarantees() {
+export default function Guarantees({toggled}) {
   return (
-    <section className="guarantees">
+    <section className={`guarantees${toggled ? "" : "bg-light"}`}>
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-8">
@@ -21,36 +21,42 @@ export default function Guarantees() {
                 title="Protection against DDoS attacks,
             full data encryption"
                 imgUrl={iconOne}
+                toggled={toggled}
               />
               <GuaranteesBox
                 header="WORLD COVERAGE"
                 title="Providing services in 99% countries
                 around all the globe"
                 imgUrl={iconTwo}
+                toggled={toggled}
               />
               <GuaranteesBox
                 header="PAYMENT OPTIONS"
                 title="Popular methods: Visa, MasterCard,
                 bank transfer, cryptocurrency"
                 imgUrl={iconThree}
+                toggled={toggled}
               />
               <GuaranteesBox
                 header="MOBILE APP"
                 title="Trading via our Mobile App, Available
                 in Play Store & App Store"
                 imgUrl={iconFour}
+                toggled={toggled}
               />
               <GuaranteesBox
                 header="COST EFFICIENCY"
                 title="Reasonable trading fees for takers
                 and all market makers"
                 imgUrl={iconFive}
+                toggled={toggled}
               />
               <GuaranteesBox
                 header="HIGH LIQUIDITY"
                 title="Fast access to high liquidity orderbook
                 for top currency pairs"
                 imgUrl={iconSix}
+                toggled={toggled}
               />
             </div>
           </div>

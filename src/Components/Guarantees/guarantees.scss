@@ -6,10 +6,19 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
-$transition: all 0.3s linear;
+$transition: all 0.2s ease;
+
+
+.text-second-dark{
+  color: $maincolor !important;
+}
+.text-dark-main{
+  color: $secondcolor !important;
+}
 
 .guarantees {
   background-color: $maincolor;
+  transition: $transition !important;
 }
 .guarantees-area {
   display: flex;

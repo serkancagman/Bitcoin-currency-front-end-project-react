@@ -1,4 +1,18 @@
+.text-main-dark {
+  color: #0a0a0a;
+}
+
+.text-second-dark {
+  color: #1d1d1d;
+}
+
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
+
 .experts {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background-color: #0a0a0a;
   padding-top: 100px;
   padding-bottom: 5rem;
@@ -51,8 +65,8 @@
 }
 
 .social-icons {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   opacity: 0;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.363);

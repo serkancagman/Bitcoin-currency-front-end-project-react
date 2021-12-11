@@ -6,8 +6,14 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
-$transition: all 0.3s linear;
+$transition: all 0.2s ease;
 
+.text-dark-main{
+  color: $secondcolor !important;
+}
+.text-dark-second{
+  color: $maincolor !important;
+}
 .calculator {
   height: 197px;
   position: relative;
@@ -23,6 +29,7 @@ $transition: all 0.3s linear;
     right: 0;
     .container-lg {
       .cal {
+        transition: $transition;
         background-color: $maincolor;
         color: #fff;
         padding: 4rem 1rem;

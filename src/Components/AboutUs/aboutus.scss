@@ -6,14 +6,25 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
-$transition: all 0.3s linear;
+$transition: all 0.2s ease;
 
+
+.text-main-dark{
+  color: $secondcolor !important;
+}
+.text-second-dark{
+  color: $maincolor !important;
+}
+.bg-second{
+  background-color: #E7E7E7 !important;
+}
 .about-cards{
   position: relative;
   width: 100%;
   height: 100%;
 }
 .card-main-header {
+  transition: $transition;
   position: absolute;
   top: -70px;
   padding: 40px 10px;
@@ -91,11 +102,14 @@ $transition: all 0.3s linear;
   margin: 0 10px;
 }
 .element-result-text {
-  color: $statinfoColor;
+  
   margin:20px 0;
   display: none;
   opacity: 0;
   transition: opacity 0.15s linear;
+}
+.element-result{
+  color: $statinfoColor;
 }
 .about-button {
   background-color: transparent;
@@ -112,6 +126,7 @@ $transition: all 0.3s linear;
 }
 .about-us {
   background-color: $secondcolor;
+  transition: $transition;
 }
 .our-info{
   display: flex;

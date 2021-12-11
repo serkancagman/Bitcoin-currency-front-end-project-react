@@ -5,16 +5,16 @@ import PersonThree from "../../images/member3.jpg";
 import PersonFour from "../../images/member4.jpg";
 import Persons from "./Persons";
 import "./experts.css"
-export default function Experts() {
+export default function Experts({toggled}) {
   return (
-    <section className="experts">
+    <section className={`experts${toggled ? "" : " bg-second"}`}>
       <div className="container-lg">
-        <h2 className="text-center person-header">
+        <h2 className={`text-center person-header${toggled ? "" : " text-main-dark"}`}>
           OUR <span>EXPERTS</span>
         </h2>
         <div className="d-flex my-5 justify-content-center align-items-center title-area">
               <span className="line "></span>
-              <p className="about-title">
+              <p className={`about-title${toggled ? "" : " text-second-dark"}`}>
               A TALENTED TEAM OF CRYPTOCURRENCY EXPERTS BASED IN LONDON
               </p>
               <span className="line"></span>

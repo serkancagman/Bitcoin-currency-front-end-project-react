@@ -1,5 +1,15 @@
 .news {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background-color: #1d1d1d;
+}
+
+.text-main-dark {
+  color: #0a0a0a !important;
+}
+
+.text-second-dark {
+  color: #1d1d1d !important;
 }
 
 .news-area {
@@ -41,8 +51,8 @@
   border: 2px solid transparent;
   background-color: #fd961a;
   color: #fff;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   font-weight: 600;
 }
 

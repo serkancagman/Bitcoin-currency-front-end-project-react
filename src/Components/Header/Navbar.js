@@ -9,12 +9,12 @@ import {
 } from "react-bootstrap-icons";
 import { useState } from "react";
 
-export default function Navbars() {
+export default function Navbars({toggled}) {
   const [activeSearch, setActiveSearch] = useState(false);
 
   return (
     <>
-      <nav className="navbar navbar-expand-md">
+      <nav className={`navbar navbar-expand-md${toggled ? "" : " light-second-bg"}`}>
         <div className="navbar-area w-100">
           <div className="container-lg">
             <div className="navbar-wrapper">
@@ -41,22 +41,22 @@ export default function Navbars() {
               <div className="collapse navbar-collapse" id="navbarToggler">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       HOME
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       ABOUT US
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       SERVICES
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       PRICING
                     </a>
                   </li>
@@ -67,31 +67,31 @@ export default function Navbars() {
                       id="dropdownMenuLink"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      className="nav-link dropdown-toggle"
+                      className={`nav-link dropdown-toggle${toggled ? "" : " light-main-font"}`}
                     >
                       BLOG <CaretDownFill />{" "}
                     </a>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className="dropdown-menu drop-nav"
+                      className={`dropdown-menu drop-nav${toggled ? "" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           RIGHT SIDEBAR
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           LEFT SIDEBAR
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           GRID NO SIDEBAR
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           SINGLE POST
                         </a>
                       </li>
@@ -104,74 +104,74 @@ export default function Navbars() {
                       id="dropdownMenuLink"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      className="nav-link dropdown-toggle"
+                      className={`nav-link dropdown-toggle${toggled ? "" : " light-main-font"}`}
                     >
                       PAGES <CaretDownFill />
                     </a>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className="dropdown-menu drop-nav w-border"
+                      className={`dropdown-menu drop-nav w-border${toggled ? "" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           REGISTER PAGE
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           LOGIN PAGE
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           SHOPPING CART
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           SHOPPING CHECKOUT
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           FAQ PAGE
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           404 PAGE
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           SERVER ERROR PAGE
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           TERMS OF SERVICES
                         </a>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className="drop-link">
+                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
                           COMING SOON
                         </a>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       CONTACT
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className="nav-link">
+                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       <CartFill />
                     </a>
                   </li>
                   <li className="nav-item">
                     <div
-                      className="search-button nav-link"
+                      className={`nav-link search-button${toggled ? "" : " light-main-font"}`}
                       onClick={() => setActiveSearch(true)}
                     >
                       <Search />
