@@ -342,11 +342,12 @@ $transition: all 0.3s linear;
     height: 416px !important;
     background-color: $secondcolor;
   }
-
-
   .experts {
     padding-top: 2rem !important;
     padding-bottom: 5rem !important;
+  }
+  .member-area{
+    height:705px !important;
   }
 }
 @media only screen and (min-width: 281px) and (max-width: 375px) {

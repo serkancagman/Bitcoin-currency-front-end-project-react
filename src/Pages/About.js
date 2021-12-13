@@ -8,6 +8,7 @@ const About = ({toggled,switchTheme}) => {
     console.log(toggled)
     console.log(switchTheme)
     return (
+        
         <>
         <HeaderMain
         toggled={toggled}

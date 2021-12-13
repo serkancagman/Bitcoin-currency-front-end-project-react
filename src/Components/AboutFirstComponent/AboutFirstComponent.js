@@ -4,27 +4,16 @@ import BitChain from "../../images/bitchain.png";
 import { ExclamationTriangleFill } from "react-bootstrap-icons";
 import { Member } from "./Member";
 import Experts from "../Experts/Experts";
+import { AboutTop } from "./AboutTop";
 export const AboutFirstComponent = ({toggled}) => {
   return (
     <>
-      <section className="about-first-item">
-        <div className={`about-overlay${toggled ? "" : " about-after-light"}`}>
-          <div className="container-lg">
-            <div className="col-md-12 text-center">
-              <div className="about-item-area">
-                <h3 className="about-welcome">
-                  ABOUT <span>US</span>
-                </h3>
-                <hr />
-                <h6 className="about-bottom-info">
-                  {" "}
-                  <span className="about-bottom-first">HOME</span> / ABOUT
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutTop 
+      header="ABOUT"
+      headerSecond="US"
+      bottomHeader="ABOUT"
+      toggled={toggled}
+      />
       <section className={`we-are-about${toggled ? "" : " bg-light-area"}`}>
         <div className="container-lg">
           <div className="row justify-content-center align-items-center">
