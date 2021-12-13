@@ -5,6 +5,7 @@ import "../BitcoinCalculator/bitcoincalculator.css"
 export default function BtcCalculator({toggled}) {
   return (
     <section className="calculator">
+    <div className="calculator-layout">
       <div className="calculator-area">
         <div className="container-lg">
           <div className={`cal col-md-12${toggled ? "" : " bg-light"}`}>
@@ -42,6 +43,7 @@ export default function BtcCalculator({toggled}) {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

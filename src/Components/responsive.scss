@@ -8,9 +8,6 @@ $statinfoSize: 12px;
 $statinfoColor: #aaa;
 $transition: all 0.3s linear;
 
-body {
-  height: 200vh;
-}
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +26,7 @@ body {
   background-color: $thirthcolor;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
   .login-btn {
     width: 90px !important;
   }
@@ -38,33 +35,32 @@ body {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .taks:nth-child(2){
+    &::after{
+        content: "";
+        display: none !important;
+    }
+}
+  .member-area{
+    height: 530px !important;
+  }
+  .status-area{
+    margin: 10px 0 !important;
+  }
   .customize{
     top: 45% !important;
   }
   .price-container-all{
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .about-inner-header{
     text-align: center;
     margin: 2rem 0 !important;
   }
   .about-us-main{
-    padding-top: 26rem !important;
+    padding-top: 20rem !important;
   }
 
-  .icon-flex {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column !important;
-    .card-info {
-      h3 {
-        text-align: center;
-      }
-      p {
-        text-align: center;
-      }
-    }
-  }
   #dropdownMenuLink {
     text-align: center !important;
   }
@@ -75,22 +71,41 @@ body {
   }
 
   #bitcoin{
-    width: 210px;
+    width: 210px !important;
   }
   #money{
-    width: 210px;
+    width: 210px !important;
   }
   .payment-area{
-    text-align: center;
+    text-align: center !important;
   }
   .main-person {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .new-main{
-    margin: 10px 0;
+    margin: 10px 0 !important;
+  }
+  .calculator{
+    height: 347px !important;
+    background-color: $secondcolor;
+  }
+
+
+  .experts {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .taks{
+    &::after{
+      display: none !important;
+    }
+  }
   .customize{
     top: 45% !important;
   }
@@ -102,7 +117,7 @@ body {
     padding-top: 26rem !important;
   }
   .hamburger-menu {
-    display: block;
+    display: block !important;
     width: 55px;
     margin: 0;
   }
@@ -141,10 +156,10 @@ body {
     }
   }
   .navbar {
-    border-bottom: 1 px solid #333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: fixed;
+    
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
     z-index: 9999;
     top: 0;
     left: 0;
@@ -156,25 +171,37 @@ body {
     align-items: center;
   }
   .navbar-brand {
-    display: none;
+    display: none !important;
   }
   .navbar-brand-mobile {
-    display: block;
-    width: 200px;
+    display: block !important;
+    width: 200px !important;
+  }
+  .login-area{
+    margin: 10px 0 !important;
+  }
+  .header-top-wrapper{
+    padding: 0 !important;
+  }
+  .status-area{
+    margin-top: 10px !important;
   }
   #bitcoin{
-    width: 150px;
+    width: 150px !important;
   }
   #money{
-    width: 150px;
+    width: 150px !important;
   }
   .payment-area{
-    text-align: center;
+    text-align: center !important;
   }
   .main-person {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .new-main{
+    margin: 10px 0 !important;
+  }
+  .price-container-all{
     margin: 10px 0;
   }
 }
@@ -189,12 +216,61 @@ body {
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+  .taks{
+    &::after{
+      display: none !important;
+    }
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: $secondcolor;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper {
+    &::before {
+      content: "";
+      display: block;
+      height: 60px;
+    }
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area{
+    margin: 10px 0;
+  }
   .slide-title {
     font-size: 30px !important;
     line-height: 40px !important;
   }
   .about-us-main {
-    padding-top: 33rem;
+    padding-top: 20rem !important;
   }
   .about-inner-header {
     text-align: center;
@@ -210,7 +286,7 @@ body {
     text-align: center;
   }
   .calculator-area {
-    top: -121px !important;
+    top: -110px !important;
   }
   .experts {
     padding-top: 10rem;
@@ -253,37 +329,143 @@ body {
   .cal-icon {
     width: 70px;
   }
+  .price-container-all{
+    margin: 10px 0 !important;
+  }
+  .dropdown-menu{
+    background-color: $secondcolor !important;
+  }
+  .dropdown-menu{
+    background-color: $secondcolor !important;
+  }
+  .calculator{
+    height: 416px !important;
+    background-color: $secondcolor;
+  }
+
+
+  .experts {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+  }
 }
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .card-info{
+    width: 225px !important;
+  }
+  .we-are-header{
+    text-align: center !important;
+    margin: 30px 0 !important;
+}
+.info-about{
+  text-align: center !important;
+}
+.we-are-all {
+  text-align: center !important;
+  .info-btn{
+    margin: 20px 0 !important;
+  }
+}
+.member-sec{
+  height: 710px !important;
+}
+.member-area{
+  height: 710px !important;
+}
+.member-header{
+  font-size: 30px !important;
+}
+.member-inner{
+  padding: 0 10px;
+}
+
+  .taks{
+    &::after{
+      display: none !important;
+    }
+  }
+  .price-container-all{
+    margin: 10px 0 !important;
+  }
+  .nav-link{
+    text-align: center !important;
+  }
+  .dropdown-menu{
+    background-color: $secondcolor !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: $secondcolor;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper {
+    &::before {
+      content: "";
+      display: block;
+      height: 60px;
+    }
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area{
+    margin: 10px 0 !important;
+  }
   .slide-title {
     font-size: 30px !important;
     line-height: 40px !important;
   }
   .about-us-main {
-    padding-top: 33rem;
+    padding-top: 20rem !important;
   }
   .about-inner-header {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center !important;
+    margin: 20px 0 !important;
   }
   .about-inner-text {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
   .element-result {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
   .we-are-area {
-    text-align: center;
+    text-align: center !important;
   }
-  .calculator-area {
-    top: -121px !important;
+  .calculator{
+    height: 416px !important;
+    background-color: $secondcolor;
   }
+
+
   .experts {
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
   }
   .new-main {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .come-header {
     font-size: 30px !important;
@@ -292,10 +474,17 @@ body {
     font-size: 17px !important;
   }
   .main-person {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .payment-area {
-    text-align: center;
+    text-align: center !important;
+  }
+  .package{
+    padding-bottom: 5rem !important;
+  }
+  .element-header{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
   }
   .our-info {
     flex-direction: column !important;
@@ -317,11 +506,88 @@ body {
     width: 70px !important;
   }
   .cal-icon {
-    width: 70px;
+    width: 70px !important;
   }
 }
 
 @media only screen and (max-width: 280px) {
+  .taks{
+    &::after{
+      display: none !important;
+    }
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: $secondcolor;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper {
+    &::before {
+      content: "";
+      display: block;
+      height: 60px;
+    }
+  }
+  .icon-flex{
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .card-icon{
+    width: 55px !important;
+    height: 35px !important;
+  }
+  .card-main{
+    text-align: center !important;
+    font-size: 15px !important;
+  }
+  .card-info{
+    p{
+      font-size: 12px !important;
+      text-align: center !important;
+    }
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area{
+    margin: 10px 0 !important;
+  }
+  .dropdown-menu{
+    background-color: $secondcolor !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: $secondcolor;
+    width: 100%;
+  }
   .package-header {
     font-size: 35px !important;
   }
@@ -333,30 +599,31 @@ body {
     line-height: 40px !important;
   }
   .about-us-main {
-    padding-top: 33rem;
+    padding-top: 21rem !important;
   }
+  
   .about-inner-header {
-    text-align: center;
-    margin: 20px 0;
+    text-align: center !important;
+    margin: 20px 0 !important;
   }
   .about-inner-text {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
   .element-result {
-    margin: 20px 0;
+    margin: 20px 0 !important;
   }
   .we-are-area {
-    text-align: center;
+    text-align: center !important;
   }
   .calculator-area {
     top: -121px !important;
   }
   .experts {
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 10rem !important;
+    padding-bottom: 5rem !important;
   }
   .new-main {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .come-header {
     font-size: 30px !important;
@@ -365,10 +632,10 @@ body {
     font-size: 17px !important;
   }
   .main-person {
-    margin: 10px 0;
+    margin: 10px 0 !important;
   }
   .payment-area {
-    text-align: center;
+    text-align: center !important;
   }
   .our-info {
     flex-direction: column !important;
@@ -390,6 +657,12 @@ body {
     width: 70px !important;
   }
   .cal-icon {
-    width: 70px;
+    width: 70px !important;
+  }
+  .cal{
+    padding: 1rem 1rem !important;
+  }
+  .price-container-all{
+    margin: 10px 0 !important;
   }
 }

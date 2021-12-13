@@ -46,7 +46,7 @@ export default function Navbars({toggled}) {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <a href="/about" className={`nav-link${toggled ? "" : " light-main-font"}`}>
                       ABOUT US
                     </a>
                   </li>

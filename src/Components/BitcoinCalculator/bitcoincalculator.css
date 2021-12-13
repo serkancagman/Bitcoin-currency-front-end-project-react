@@ -7,23 +7,27 @@
 }
 
 .calculator {
-  height: 197px;
+  height: 347px;
+  width: 100%;
+  padding: 3rem 0;
   position: relative;
-  background-image: url(../../images/cal-bg.jpg);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #0a0a0a;
 }
 
-.calculator .calculator-area {
+.calculator .calculator-layout {
+  background-image: url(../../images/cal-bg.jpg);
+  height: 100%;
+}
+
+.calculator-area {
   z-index: 10;
   position: absolute;
-  top: -75px;
+  top: 0 !important;
   left: 0;
   right: 0;
 }
 
-.calculator .calculator-area .container-lg .cal {
+.calculator-area .container-lg .cal {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   background-color: #1d1d1d;

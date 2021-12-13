@@ -6,7 +6,7 @@ export default function Slider() {
       <div id="slideControl" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div className=" item first-item "></div>
+            <div className="w-100 h-100 item first-item "></div>
             <div className="first-info">
               <div className="row m-0 w-100 h-100 justify-content-center align-items-center">
                 <div className="col-md-12 text-center">

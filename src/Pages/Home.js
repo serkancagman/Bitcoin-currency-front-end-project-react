@@ -9,6 +9,7 @@ import Footer from "../Components/Footer/Footer"
 import Guarantees from "../Components/Guarantees/Guarantees"
 import HeaderMain from "../Components/Header/Header"
 import StyleSite from "../Components/Stylesite/StyleSite"
+import "../Components/responsive.css"
 
 
 
