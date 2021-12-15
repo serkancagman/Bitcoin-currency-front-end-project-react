@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Home } from "./Pages/Home";
 import About from "./Pages/About";
 import { Services } from "./Pages/Services";
-
+import { ErrorPage } from "./Pages/ErrorPage";
 function App() {
   const [toggled, setToggled] = useState(true);
   const handleSwitchTheme = () => {
@@ -15,6 +15,7 @@ function App() {
     <>
       <Router>
         <Routes>
+        <Route path="*" element={<ErrorPage/>} />
           <Route
             path="/"
             element={<Home toggled={toggled} switchTheme={handleSwitchTheme} />}

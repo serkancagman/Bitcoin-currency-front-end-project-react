@@ -97,7 +97,15 @@ $transition: all 0.3s linear;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-
+  .main-error-text{
+    font-size: 160px !important;
+    color: $statinfoColor;
+    font-weight: 300;
+    line-height: 180px !important;
+}
+.oops{
+  font-size: 27px !important;
+}
   #dropdownMenuLink {
     text-align: center !important;
   }
@@ -349,8 +357,26 @@ $transition: all 0.3s linear;
   .member-area{
     height:705px !important;
   }
+  .main-error-text{
+    font-size: 160px !important;
+    color: $statinfoColor;
+    font-weight: 300;
+    line-height: 180px !important;
+}
+.oops{
+  font-size: 27px !important;
+}
 }
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .main-error-text{
+    font-size: 160px !important;
+    color: $statinfoColor;
+    font-weight: 300;
+    line-height: 180px !important;
+}
+.oops{
+  font-size: 27px !important;
+}
   .card-info{
     width: 225px !important;
   }
@@ -512,6 +538,15 @@ $transition: all 0.3s linear;
 }
 
 @media only screen and (max-width: 280px) {
+  .main-error-text{
+    font-size: 160px !important;
+    color: $statinfoColor;
+    font-weight: 300;
+    line-height: 180px !important;
+}
+.oops{
+  font-size: 27px !important;
+}
   .taks{
     &::after{
       display: none !important;

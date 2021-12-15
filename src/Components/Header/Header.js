@@ -6,7 +6,7 @@ import "./header.css"
 
 export default function HeaderMain({toggled}) {
   return (
-    <>
+  <>
       <header>
         <div className={`header-top-wrapper${toggled ? " " : " bg-light"}`}>
           <div className="container-lg">
