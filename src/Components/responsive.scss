@@ -97,6 +97,7 @@ $transition: all 0.3s linear;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+
   .main-error-text{
     font-size: 160px !important;
     color: $statinfoColor;
@@ -224,6 +225,9 @@ $transition: all 0.3s linear;
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+  .item{
+    background-attachment: none !important;
+  }
   .taks{
     &::after{
       display: none !important;
@@ -368,6 +372,9 @@ $transition: all 0.3s linear;
 }
 }
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .item{
+    background-attachment: none !important;
+  }
   .main-error-text{
     font-size: 160px !important;
     color: $statinfoColor;

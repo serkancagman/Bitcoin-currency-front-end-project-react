@@ -12,7 +12,7 @@ export default function BtcCalculator({toggled,coinPrice}) {
   }
 
   return (
-    <section className="calculator">
+    <section className={`calculator${toggled ? "" : " bg-main-light"}`}>
     <div className="calculator-layout">
       <div className="calculator-area">
         <div className="container-lg">
