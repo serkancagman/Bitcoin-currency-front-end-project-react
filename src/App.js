@@ -49,13 +49,22 @@ function App() {
           <Route
             path="/about"
             element={
-              <About toggled={toggled} switchTheme={handleSwitchTheme} />
+              <About toggled={toggled}
+               switchTheme={handleSwitchTheme}
+                            coinPrice={coinPrice}
+             coinVolume={coinVolume}
+             coinDayPrice={coinDayPrice}
+                />
             }
           />
           <Route
             path="/services"
             element={
-              <Services toggled={toggled} switchTheme={handleSwitchTheme} />
+              <Services toggled={toggled} switchTheme={handleSwitchTheme}
+                           coinPrice={coinPrice}
+             coinVolume={coinVolume}
+             coinDayPrice={coinDayPrice}
+               />
             }
           />
         </Routes>

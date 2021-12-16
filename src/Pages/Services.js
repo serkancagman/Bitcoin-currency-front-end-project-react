@@ -6,10 +6,14 @@ import StyleSite from "../Components/Stylesite/StyleSite";
 import {ServicesMain} from "../Components/ServicesMain/ServicesMain"
 
 
-export const Services = ({ toggled, switchTheme }) => {
+export const Services = ({ toggled, switchTheme,coinPrice,coinVolume,coinDayPrice }) => {
   return (
     <>
-      <HeaderMain toggled={toggled} />
+      <HeaderMain toggled={toggled}
+      coinPrice={coinPrice}
+      coinVolume={coinVolume}
+      coinDayPrice={coinDayPrice}
+      />
       <StyleSite toggled={toggled} switchTheme={switchTheme} />
       <AboutTop
         header="OUR"

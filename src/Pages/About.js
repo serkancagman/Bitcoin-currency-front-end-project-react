@@ -4,7 +4,7 @@ import Footer from '../Components/Footer/Footer';
 import HeaderMain from '../Components/Header/Header';
 import StyleSite from '../Components/Stylesite/StyleSite';
 
-const About = ({toggled,switchTheme}) => {
+const About = ({toggled,switchTheme,coinPrice,coinVolume,coinDayPrice}) => {
     console.log(toggled)
     console.log(switchTheme)
     return (
@@ -12,6 +12,9 @@ const About = ({toggled,switchTheme}) => {
         <>
         <HeaderMain
         toggled={toggled}
+        coinPrice={coinPrice}
+        coinVolume={coinVolume}
+        coinDayPrice={coinDayPrice}
         />
         <StyleSite
         toggled={toggled}
