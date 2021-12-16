@@ -1,15 +1,27 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./Components/responsive.css";
-import { useState } from "react";
+import {useState} from "react"
 import { Home } from "./Pages/Home";
 import About from "./Pages/About";
 import { Services } from "./Pages/Services";
 import { ErrorPage } from "./Pages/ErrorPage";
+
+
+
 function App() {
+  
   const [toggled, setToggled] = useState(true);
   const handleSwitchTheme = () => {
     setToggled((s) => !s);
   };
+
+
+
+
+
+
+
+
 
   return (
     <>
