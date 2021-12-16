@@ -21,7 +21,7 @@ The purpose of this project was to develop myself in the front-end field. Curren
 
 ## How does it look ?
 
-<img width="500" src="https://i.hizliresim.com/flefuyd.png" />
+<img width="700" src="https://i.hizliresim.com/svb6kd1.png" />
 
 
 
