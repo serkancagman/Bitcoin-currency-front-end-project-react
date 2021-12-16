@@ -2,30 +2,11 @@ import Logo from "../../images/main-logo.png";
 import LightLogo from "../../images/logo-white.png";
 import { PersonPlusFill, PersonFill } from "react-bootstrap-icons";
 import Navbars from "./Navbar";
-import { useState, useEffect } from "react";
 import "./header.css";
-import axios from "axios";
 
-export default function HeaderMain({ toggled }) {
-  const [coinPrice, setCoinPrice] = useState("");
-  const [coinVolume, setCoinVolume] = useState("");
-  const [coinDayPrice, setCoinDayPrice] = useState("");
 
-  useEffect(() => {
-    const getData = async () => {
-      const baseURL =
-        "https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true";
-      const response = await axios(baseURL);
-      setCoinPrice(response.data.market_data.current_price.usd);
-      setCoinVolume(
-        Math.floor(
-          response.data.market_data.price_change_percentage_24h * 100,
-        ) / 100,
-      );
-      setCoinDayPrice(Math.floor(response.data.market_data.high_24h.usd));
-    };
-    getData();
-  }, []);
+export default function HeaderMain({ toggled,coinVolume,coinDayPrice,coinPrice }) {
+
 
   return (
     <>
