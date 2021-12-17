@@ -1,4 +1,19 @@
 @charset "UTF-8";
+<<<<<<< HEAD
+=======
+.text-second-dark {
+  color: #1d1d1d !important;
+}
+
+.text-dark-main {
+  color: #0a0a0a !important;
+}
+
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
+
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 .price-container-all {
   width: 100%;
   height: 320px;
@@ -17,8 +32,13 @@
 }
 
 .price-wrapper {
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,8 +91,13 @@
   color: #fff;
   font-weight: 600;
   font-size: 20px;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .price-wrapper .buy-btn:hover {
@@ -84,8 +109,13 @@
 .price-wrapper-sell {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,8 +168,13 @@
   color: #fff;
   font-weight: 600;
   font-size: 20px;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .price-wrapper-sell .buy-btn:hover {
@@ -149,6 +184,11 @@
 }
 
 .package {
+<<<<<<< HEAD
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   background-color: #0a0a0a;
   padding-top: 5rem;
   padding-bottom: 10rem;
@@ -158,6 +198,10 @@
   font-size: 45px;
   line-height: 45px;
   font-weight: 800;
+<<<<<<< HEAD
+=======
+  color: #fff;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .package-header span {
@@ -183,6 +227,10 @@
   width: 200px;
   height: 50px;
   border: 1px solid #333;
+<<<<<<< HEAD
+=======
+  background-color: #0a0a0a;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .buy-sell-area span {
@@ -195,14 +243,24 @@
 }
 
 .select-buy {
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   left: 1px !important;
 }
 
 .select-background {
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   background-color: #fd961a;
   width: 100px;
   height: 46px;

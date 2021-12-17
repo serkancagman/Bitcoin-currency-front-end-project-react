@@ -6,6 +6,7 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
+<<<<<<< HEAD
 $transition: all 0.3s linear;
 
 .calculator {
@@ -23,6 +24,41 @@ $transition: all 0.3s linear;
     right: 0;
     .container-lg {
       .cal {
+=======
+$transition: all 0.2s ease;
+
+.text-dark-main{
+  color: $secondcolor !important;
+}
+.text-dark-second{
+  color: $maincolor !important;
+}
+.bg-main-light{
+  background-color: #E7E7E7 !important;
+}
+.calculator {
+  height: 347px;
+  width: 100%;
+  padding: 3rem 0;
+  position: relative;
+  background-color: $secondcolor;
+  .calculator-layout{
+    background-image: url(../../images/cal-bg.jpg);
+    height: 100%;
+    
+  }
+}
+  .calculator-area {
+    z-index: 10;
+    position: absolute;
+    top: 0 !important;
+    left: 0;
+    right: 0;
+
+    .container-lg {
+      .cal {
+        transition: $transition;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
         background-color: $maincolor;
         color: #fff;
         padding: 4rem 1rem;
@@ -30,7 +66,11 @@ $transition: all 0.3s linear;
       }
     }
   }
+<<<<<<< HEAD
 }
+=======
+
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 .cal-header {
   font-size: 45px;
   font-weight: 700;
@@ -51,7 +91,11 @@ $transition: all 0.3s linear;
   text-align: center;
   width: 230px;
   height: 45px;
+<<<<<<< HEAD
   display: inline-block;
+=======
+  
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   margin: 0;
   padding: 0;
   font-weight: 600;

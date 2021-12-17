@@ -3,8 +3,11 @@ import "../BuyandSell/buyandsell.css"
 
 
 export default function BuyCard({sellStatus,dollarPrice,coinPrice}) {
+<<<<<<< HEAD
     console.log(sellStatus)
 
+=======
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
     return (
         <div className="col-sm-6 col-md-6 col-lg-3 col-xl-3 ">
         <div className={sellStatus ? "price-container-all flip mx-auto" : " price-container-all mx-auto"}>

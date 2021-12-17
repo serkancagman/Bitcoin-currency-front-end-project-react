@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .calculator {
   height: 197px;
   position: relative;
@@ -11,11 +12,48 @@
   z-index: 10;
   position: absolute;
   top: -75px;
+=======
+.text-dark-main {
+  color: #0a0a0a !important;
+}
+
+.text-dark-second {
+  color: #1d1d1d !important;
+}
+
+.bg-main-light {
+  background-color: #E7E7E7 !important;
+}
+
+.calculator {
+  height: 347px;
+  width: 100%;
+  padding: 3rem 0;
+  position: relative;
+  background-color: #0a0a0a;
+}
+
+.calculator .calculator-layout {
+  background-image: url(../../images/cal-bg.jpg);
+  height: 100%;
+}
+
+.calculator-area {
+  z-index: 10;
+  position: absolute;
+  top: 0 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   left: 0;
   right: 0;
 }
 
+<<<<<<< HEAD
 .calculator .calculator-area .container-lg .cal {
+=======
+.calculator-area .container-lg .cal {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   background-color: #1d1d1d;
   color: #fff;
   padding: 4rem 1rem;
@@ -44,7 +82,10 @@
   text-align: center;
   width: 230px;
   height: 45px;
+<<<<<<< HEAD
   display: inline-block;
+=======
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   margin: 0;
   padding: 0;
   font-weight: 600;

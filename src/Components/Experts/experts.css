@@ -1,4 +1,22 @@
+<<<<<<< HEAD
 .experts {
+=======
+.text-main-dark {
+  color: #0a0a0a;
+}
+
+.text-second-dark {
+  color: #1d1d1d;
+}
+
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
+
+.experts {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   background-color: #0a0a0a;
   padding-top: 100px;
   padding-bottom: 5rem;
@@ -51,8 +69,13 @@
 }
 
 .social-icons {
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   opacity: 0;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.363);

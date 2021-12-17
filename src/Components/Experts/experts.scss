@@ -6,9 +6,25 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
+<<<<<<< HEAD
 $transition: all 0.3s linear;
 
 .experts {
+=======
+$transition: all 0.2s ease;
+
+.text-main-dark{
+  color: $secondcolor;
+}
+.text-second-dark{
+  color: $maincolor;
+}
+.bg-second {
+  background-color: #E7E7E7 !important;
+}
+.experts {
+  transition: $transition;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   background-color: $secondcolor;
   padding-top: 100px;
   padding-bottom: 5rem;

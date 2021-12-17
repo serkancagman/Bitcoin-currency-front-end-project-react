@@ -1,6 +1,27 @@
 .header-top-wrapper {
   background-color: #1d1d1d;
   padding: 1.5rem 0;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.light-main-bg {
+  background-color: #e7e7e7 !important;
+}
+
+.light-main-font {
+  color: #0a0a0a !important;
+}
+
+.light-title-font {
+  color: #1d1d1d !important;
+}
+
+.light-second-bg {
+  background-color: #E7E7E7 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .navbar-brand-mobile {
@@ -68,8 +89,13 @@
   color: #fd961a;
   text-decoration: none;
   border: 2px solid #fd961a;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .login-area .login-btn:hover {
@@ -100,8 +126,13 @@
   text-decoration: none;
   color: #fff;
   border: 2px solid transparent;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .login-area .register-btn:hover {
@@ -130,6 +161,11 @@
 
 .navbar {
   background-color: #0a0a0a;
+<<<<<<< HEAD
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -148,7 +184,11 @@
 }
 
 .navbar-wrapper .navbar-nav .nav-item {
+<<<<<<< HEAD
   padding: 5px 9px;
+=======
+  padding: 5px 5px;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   margin: 0px 2px;
   position: relative;
 }
@@ -157,12 +197,21 @@
   font-weight: 600;
   font-size: 14px;
   color: #fff;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
 .navbar-wrapper .navbar-nav .nav-item .nav-link:hover {
   color: #fd961a;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.navbar-wrapper .navbar-nav .nav-item .nav-link:hover {
+  color: #fd961a !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .navbar-wrapper .navbar-nav .nav-item .nav-link svg {
@@ -232,8 +281,13 @@
   overflow: hidden !important;
   position: relative;
   height: 0;
+<<<<<<< HEAD
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+=======
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 
 .search-area .search-inputs form #search {

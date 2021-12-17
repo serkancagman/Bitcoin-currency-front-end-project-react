@@ -6,14 +6,33 @@ $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
+<<<<<<< HEAD
 $transition: all 0.3s linear;
 
+=======
+$transition: all 0.2s ease;
+
+
+.text-main-dark{
+  color: $secondcolor !important;
+}
+.text-second-dark{
+  color: $maincolor !important;
+}
+.bg-second{
+  background-color: #E7E7E7 !important;
+}
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 .about-cards{
   position: relative;
   width: 100%;
   height: 100%;
 }
 .card-main-header {
+<<<<<<< HEAD
+=======
+  transition: $transition;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   position: absolute;
   top: -70px;
   padding: 40px 10px;
@@ -85,18 +104,33 @@ $transition: all 0.3s linear;
   margin-bottom: 0 !important;
 }
 .element-header:nth-child(2) {
+<<<<<<< HEAD
   border-left: 2px solid $statinfoColor;
   border-right: 2px solid $statinfoColor;
+=======
+  border-left: 1px solid $statinfoColor;
+  border-right: 1px solid $statinfoColor;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   padding: 5px 15px;
   margin: 0 10px;
 }
 .element-result-text {
+<<<<<<< HEAD
   color: $statinfoColor;
+=======
+  
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   margin:20px 0;
   display: none;
   opacity: 0;
   transition: opacity 0.15s linear;
 }
+<<<<<<< HEAD
+=======
+.element-result{
+  color: $statinfoColor;
+}
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 .about-button {
   background-color: transparent;
   border: 2px solid $thirthcolor;
@@ -112,6 +146,10 @@ $transition: all 0.3s linear;
 }
 .about-us {
   background-color: $secondcolor;
+<<<<<<< HEAD
+=======
+  transition: $transition;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 }
 .our-info{
   display: flex;

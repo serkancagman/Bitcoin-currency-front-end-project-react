@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 body {
   height: 200vh;
 }
 
+=======
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +25,11 @@ body {
   background-color: #fd961a;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
+=======
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   .login-btn {
     width: 90px !important;
   }
@@ -32,14 +39,33 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+<<<<<<< HEAD
   .price-container-all {
     margin: 10px 0;
+=======
+  .taks:nth-child(2)::after {
+    content: "";
+    display: none !important;
+  }
+  .member-area {
+    height: 530px !important;
+  }
+  .status-area {
+    margin: 10px 0 !important;
+  }
+  .customize {
+    top: 50% !important;
+  }
+  .price-container-all {
+    margin: 10px 0 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .about-inner-header {
     text-align: center;
     margin: 2rem 0 !important;
   }
   .about-us-main {
+<<<<<<< HEAD
     padding-top: 26rem !important;
   }
   .icon-flex {
@@ -59,6 +85,9 @@ body {
   }
   .icon-flex .card-info p {
     text-align: center;
+=======
+    padding-top: 20rem !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   #dropdownMenuLink {
     text-align: center !important;
@@ -69,6 +98,7 @@ body {
     width: 100%;
   }
   #bitcoin {
+<<<<<<< HEAD
     width: 210px;
   }
   #money {
@@ -82,10 +112,54 @@ body {
   }
   .new-main {
     margin: 10px 0;
+=======
+    width: 210px !important;
+  }
+  #money {
+    width: 210px !important;
+  }
+  .payment-area {
+    text-align: center !important;
+  }
+  .main-person {
+    margin: 10px 0 !important;
+  }
+  .new-main {
+    margin: 10px 0 !important;
+  }
+  .calculator {
+    height: 347px !important;
+    background-color: #0a0a0a;
+  }
+  .experts {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 767px) {
+<<<<<<< HEAD
+=======
+  .main-error-text {
+    font-size: 160px !important;
+    color: #aaa;
+    font-weight: 300;
+    line-height: 180px !important;
+  }
+  .oops {
+    font-size: 27px !important;
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .taks::after {
+    display: none !important;
+  }
+  .customize {
+    top: 45% !important;
+  }
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   .about-inner-header {
     text-align: center;
     margin: 2rem 0 !important;
@@ -94,7 +168,11 @@ body {
     padding-top: 26rem !important;
   }
   .hamburger-menu {
+<<<<<<< HEAD
     display: block;
+=======
+    display: block !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
     width: 55px;
     margin: 0;
   }
@@ -136,10 +214,16 @@ body {
     height: 60px;
   }
   .navbar {
+<<<<<<< HEAD
     border-bottom: 1 px solid #333;
     padding-top: 10px;
     padding-bottom: 10px;
     position: fixed;
+=======
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
     z-index: 9999;
     top: 0;
     left: 0;
@@ -158,6 +242,7 @@ body {
             align-items: center;
   }
   .navbar-brand {
+<<<<<<< HEAD
     display: none;
   }
   .navbar-brand-mobile {
@@ -177,6 +262,39 @@ body {
     margin: 10px 0;
   }
   .new-main {
+=======
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px !important;
+  }
+  .login-area {
+    margin: 10px 0 !important;
+  }
+  .header-top-wrapper {
+    padding: 0 !important;
+  }
+  .status-area {
+    margin-top: 10px !important;
+  }
+  #bitcoin {
+    width: 150px !important;
+  }
+  #money {
+    width: 150px !important;
+  }
+  .payment-area {
+    text-align: center !important;
+  }
+  .main-person {
+    margin: 10px 0 !important;
+  }
+  .new-main {
+    margin: 10px 0 !important;
+  }
+  .price-container-all {
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
     margin: 10px 0;
   }
 }
@@ -185,15 +303,83 @@ body {
   .status-area {
     display: none !important;
   }
+<<<<<<< HEAD
 }
 
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+=======
+  .customize {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+  .item {
+    background-attachment: none !important;
+  }
+  .taks::after {
+    display: none !important;
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper::before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area {
+    margin: 10px 0;
+  }
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   .slide-title {
     font-size: 30px !important;
     line-height: 40px !important;
   }
   .about-us-main {
+<<<<<<< HEAD
     padding-top: 33rem;
+=======
+    padding-top: 20rem !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .about-inner-header {
     text-align: center;
@@ -209,7 +395,11 @@ body {
     text-align: center;
   }
   .calculator-area {
+<<<<<<< HEAD
     top: -121px !important;
+=======
+    top: -110px !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .experts {
     padding-top: 10rem;
@@ -254,14 +444,148 @@ body {
   .cal-icon {
     width: 70px;
   }
+<<<<<<< HEAD
 }
 
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+=======
+  .price-container-all {
+    margin: 10px 0 !important;
+  }
+  .dropdown-menu {
+    background-color: #0a0a0a !important;
+  }
+  .dropdown-menu {
+    background-color: #0a0a0a !important;
+  }
+  .calculator {
+    height: 416px !important;
+    background-color: #0a0a0a;
+  }
+  .experts {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .member-area {
+    height: 705px !important;
+  }
+  .main-error-text {
+    font-size: 160px !important;
+    color: #aaa;
+    font-weight: 300;
+    line-height: 180px !important;
+  }
+  .oops {
+    font-size: 27px !important;
+  }
+}
+
+@media only screen and (min-width: 281px) and (max-width: 375px) {
+  .item {
+    background-attachment: none !important;
+  }
+  .main-error-text {
+    font-size: 160px !important;
+    color: #aaa;
+    font-weight: 300;
+    line-height: 180px !important;
+  }
+  .oops {
+    font-size: 27px !important;
+  }
+  .card-info {
+    width: 225px !important;
+  }
+  .we-are-header {
+    text-align: center !important;
+    margin: 30px 0 !important;
+  }
+  .info-about {
+    text-align: center !important;
+  }
+  .we-are-all {
+    text-align: center !important;
+  }
+  .we-are-all .info-btn {
+    margin: 20px 0 !important;
+  }
+  .member-sec {
+    height: 710px !important;
+  }
+  .member-area {
+    height: 710px !important;
+  }
+  .member-header {
+    font-size: 30px !important;
+  }
+  .member-inner {
+    padding: 0 10px;
+  }
+  .taks::after {
+    display: none !important;
+  }
+  .price-container-all {
+    margin: 10px 0 !important;
+  }
+  .nav-link {
+    text-align: center !important;
+  }
+  .dropdown-menu {
+    background-color: #0a0a0a !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper::before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area {
+    margin: 10px 0 !important;
+  }
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   .slide-title {
     font-size: 30px !important;
     line-height: 40px !important;
   }
   .about-us-main {
+<<<<<<< HEAD
     padding-top: 33rem;
   }
   .about-inner-header {
@@ -286,6 +610,33 @@ body {
   }
   .new-main {
     margin: 10px 0;
+=======
+    padding-top: 20rem !important;
+  }
+  .about-inner-header {
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+  .about-inner-text {
+    margin: 20px 0 !important;
+  }
+  .element-result {
+    margin: 20px 0 !important;
+  }
+  .we-are-area {
+    text-align: center !important;
+  }
+  .calculator {
+    height: 416px !important;
+    background-color: #0a0a0a;
+  }
+  .experts {
+    padding-top: 2rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .new-main {
+    margin: 10px 0 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .come-header {
     font-size: 30px !important;
@@ -294,10 +645,24 @@ body {
     font-size: 17px !important;
   }
   .main-person {
+<<<<<<< HEAD
     margin: 10px 0;
   }
   .payment-area {
     text-align: center;
+=======
+    margin: 10px 0 !important;
+  }
+  .payment-area {
+    text-align: center !important;
+  }
+  .package {
+    padding-bottom: 5rem !important;
+  }
+  .element-header {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .our-info {
     -webkit-box-orient: vertical !important;
@@ -321,11 +686,112 @@ body {
     width: 70px !important;
   }
   .cal-icon {
+<<<<<<< HEAD
     width: 70px;
+=======
+    width: 70px !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
 }
 
 @media only screen and (max-width: 280px) {
+<<<<<<< HEAD
+=======
+  .main-error-text {
+    font-size: 160px !important;
+    color: #aaa;
+    font-weight: 300;
+    line-height: 180px !important;
+  }
+  .oops {
+    font-size: 27px !important;
+  }
+  .taks::after {
+    display: none !important;
+  }
+  #dropdownMenuLink {
+    text-align: center !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+  .hamburger-menu {
+    display: block !important;
+    width: 55px;
+    margin: 0;
+  }
+  .header-top-wrapper::before {
+    content: "";
+    display: block;
+    height: 60px;
+  }
+  .icon-flex {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  .card-icon {
+    width: 55px !important;
+    height: 35px !important;
+  }
+  .card-main {
+    text-align: center !important;
+    font-size: 15px !important;
+  }
+  .card-info p {
+    font-size: 12px !important;
+    text-align: center !important;
+  }
+  .navbar {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    position: fixed !important;
+    z-index: 9999;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .navbar-nav {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-brand {
+    display: none !important;
+  }
+  .navbar-brand-mobile {
+    display: block !important;
+    width: 200px;
+  }
+  .login-area {
+    margin: 10px 0 !important;
+  }
+  .dropdown-menu {
+    background-color: #0a0a0a !important;
+  }
+  .drop-nav {
+    text-align: center !important;
+    background-color: #0a0a0a;
+    width: 100%;
+  }
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   .package-header {
     font-size: 35px !important;
   }
@@ -337,6 +803,7 @@ body {
     line-height: 40px !important;
   }
   .about-us-main {
+<<<<<<< HEAD
     padding-top: 33rem;
   }
   .about-inner-header {
@@ -351,16 +818,40 @@ body {
   }
   .we-are-area {
     text-align: center;
+=======
+    padding-top: 21rem !important;
+  }
+  .about-inner-header {
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+  .about-inner-text {
+    margin: 20px 0 !important;
+  }
+  .element-result {
+    margin: 20px 0 !important;
+  }
+  .we-are-area {
+    text-align: center !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .calculator-area {
     top: -121px !important;
   }
   .experts {
+<<<<<<< HEAD
     padding-top: 10rem;
     padding-bottom: 5rem;
   }
   .new-main {
     margin: 10px 0;
+=======
+    padding-top: 10rem !important;
+    padding-bottom: 5rem !important;
+  }
+  .new-main {
+    margin: 10px 0 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .come-header {
     font-size: 30px !important;
@@ -369,10 +860,17 @@ body {
     font-size: 17px !important;
   }
   .main-person {
+<<<<<<< HEAD
     margin: 10px 0;
   }
   .payment-area {
     text-align: center;
+=======
+    margin: 10px 0 !important;
+  }
+  .payment-area {
+    text-align: center !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
   .our-info {
     -webkit-box-orient: vertical !important;
@@ -396,7 +894,17 @@ body {
     width: 70px !important;
   }
   .cal-icon {
+<<<<<<< HEAD
     width: 70px;
+=======
+    width: 70px !important;
+  }
+  .cal {
+    padding: 1rem 1rem !important;
+  }
+  .price-container-all {
+    margin: 10px 0 !important;
+>>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
   }
 }
 /*# sourceMappingURL=responsive.css.map */
