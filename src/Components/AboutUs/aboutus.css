@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+
+
 .text-main-dark {
   color: #0a0a0a !important;
 }
@@ -12,7 +12,7 @@
   background-color: #E7E7E7 !important;
 }
 
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
 .about-cards {
   position: relative;
   width: 100%;
@@ -20,11 +20,10 @@
 }
 
 .card-main-header {
-<<<<<<< HEAD
-=======
+
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
   position: absolute;
   top: -70px;
   padding: 40px 10px;
@@ -108,22 +107,21 @@
 }
 
 .element-header:nth-child(2) {
-<<<<<<< HEAD
+
   border-left: 2px solid #aaa;
   border-right: 2px solid #aaa;
-=======
+
   border-left: 1px solid #aaa;
   border-right: 1px solid #aaa;
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
   padding: 5px 15px;
   margin: 0 10px;
 }
 
 .element-result-text {
-<<<<<<< HEAD
+
   color: #aaa;
-=======
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
   margin: 20px 0;
   display: none;
   opacity: 0;
@@ -131,26 +129,26 @@
   transition: opacity 0.15s linear;
 }
 
-<<<<<<< HEAD
-=======
+
+
 .element-result {
   color: #aaa;
 }
 
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
 .about-button {
   background-color: transparent;
   border: 2px solid #fd961a;
   width: 200px;
   height: 50px;
   color: #fd961a;
-<<<<<<< HEAD
+
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-=======
+
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
 }
 
 .about-button:hover {
@@ -160,11 +158,11 @@
 
 .about-us {
   background-color: #0a0a0a;
-<<<<<<< HEAD
-=======
+
+
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
->>>>>>> 12e087d3533f4a8192aa5d9a0a5352c5a08ba5dc
+
 }
 
 .our-info {
