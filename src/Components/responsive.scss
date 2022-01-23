@@ -14,7 +14,7 @@ $transition: all 0.3s linear;
   box-sizing: border-box;
 }
 body{
-  background-color: $secondcolor;
+  background-color: $secondcolor !important;
 }
 .about-title {
   text-align: center;
@@ -227,6 +227,17 @@ body{
   }
 }
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+  .loginLogo{
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  #registerForm{
+    width: 300px !important;
+    margin-top: 4rem;
+  }
+  .formHeader{
+    font-size: 2rem !important;
+  }
   .item{
     background-attachment: none !important;
   }
@@ -374,6 +385,17 @@ body{
 }
 }
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .loginLogo{
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+  #registerForm{
+    width: 300px !important;
+    margin-top: 4rem;
+  }
+  .formHeader{
+    font-size: 2rem !important;
+  }
   .item{
     background-attachment: none !important;
   }

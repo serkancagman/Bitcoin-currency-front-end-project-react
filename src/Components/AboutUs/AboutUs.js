@@ -24,7 +24,7 @@ export default function AboutUs() {
         <div className="container-lg">
           <div className="row justify-content-center">
             <div className="col-md-12 col-lg-4">
-              <div className="row icon-flex justify-content-center ">
+              <div className="d-flex icon-flex justify-content-center ">
                 <img className="card-icon " src={Wallet} alt="" />
                 <div className="card-info">
                   <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Download Bitcoin Wallet</h3>
@@ -35,7 +35,7 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="col-md-12 col-lg-4">
-              <div className="row icon-flex justify-content-center ">
+              <div className="d-flex icon-flex justify-content-center ">
                 <img className="card-icon" src={Change} alt="" />
                 <div className="card-info">
                   <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Buy/Sell with Wallet</h3>
@@ -44,7 +44,7 @@ export default function AboutUs() {
               </div>
             </div>
             <div className="col-md-12 col-lg-4">
-              <div className="row icon-flex justify-content-center ">
+              <div className="d-flex icon-flex justify-content-center ">
                 <img className="card-icon" src={Pocket} alt="" />
                 <div className="card-info">
                   <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Add coins to your Wallet</h3>

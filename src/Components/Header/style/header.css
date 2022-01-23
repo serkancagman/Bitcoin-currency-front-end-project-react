@@ -165,7 +165,7 @@
 }
 
 .navbar {
-  padding: 0;
+  padding: 0 !important;
 }
 
 .navbar-wrapper .navbar-nav {

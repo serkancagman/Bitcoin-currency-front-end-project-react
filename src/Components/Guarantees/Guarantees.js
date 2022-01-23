@@ -15,7 +15,7 @@ export default function Guarantees() {
   const {theme} = React.useContext(ThemeContext);
 
   return (
-    <section className={`guarantees${theme === "dark" ? "" : "bg-light"}`}>
+    <section className={`guarantees ${theme === "dark" ? "" : "bg-light"}`}>
       <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-lg-8">

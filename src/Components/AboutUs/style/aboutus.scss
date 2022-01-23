@@ -50,9 +50,10 @@ $transition: all 0.2s ease;
 }
 
 .card-icon {
-  width: 75px;
+  width: 50px !important;
   vertical-align: initial;
   height: 50px;
+  margin: 0 5px;
 }
 .about-us-main {
   padding-top: 10rem;

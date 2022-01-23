@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #0a0a0a;
+  background-color: #0a0a0a !important;
 }
 
 .about-title {
@@ -223,6 +223,18 @@ body {
 }
 
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+  .loginLogo {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #registerForm {
+    width: 300px !important;
+    margin-top: 4rem;
+  }
+  .formHeader {
+    font-size: 2rem !important;
+  }
   .item {
     background-attachment: none !important;
   }
@@ -376,6 +388,18 @@ body {
 }
 
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .loginLogo {
+    left: 50% !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #registerForm {
+    width: 300px !important;
+    margin-top: 4rem;
+  }
+  .formHeader {
+    font-size: 2rem !important;
+  }
   .item {
     background-attachment: none !important;
   }
