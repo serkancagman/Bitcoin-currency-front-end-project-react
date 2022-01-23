@@ -1,6 +1,6 @@
 import React from "react";
 import Payment from "../../images/payments.png";
-
+import { Link } from "react-router-dom";
 export default function LetsSignup() {
   return (
     <>
@@ -27,34 +27,34 @@ export default function LetsSignup() {
                     <h5 className="footer-nav-header">OUR COMPANY</h5>
                     <ul className="footer-nav">
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           HOME
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/services">
                           SERVICES
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           BLOG
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           ABOUT
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           PRICING
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           CONTACT
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -62,34 +62,34 @@ export default function LetsSignup() {
                     <h5 className="footer-nav-header">HELP & SUPPORT</h5>
                     <ul className="footer-nav">
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           FAQ
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           TERMS OF SERVICES
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           404 PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           REGISTER
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           LOGIN
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           COMING SOON
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -97,24 +97,24 @@ export default function LetsSignup() {
                     <h5 className="footer-nav-header">CONTACT US</h5>
                     <ul className="footer-nav">
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           CONTACT@SERKAN.COM
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           +90 539420 2962
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           TURKEY, ISTANBUL
-                        </a>
+                        </Link>
                       </li>
                       <li className="footer-item">
-                        <a className="footer-link" href="/">
+                        <Link className="footer-link" to="/">
                           MON-SAT 08AM - 05PM
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -122,7 +122,9 @@ export default function LetsSignup() {
                     <div className="d-flex flex-column">
                       <div className="row justify-content-center flex-wrap align-items-center">
                         <div className="col-sm-6 col-lg-6 text-center">
-                          <div className="footer-right-header price-right">195,432K</div>
+                          <div className="footer-right-header price-right">
+                            195,432K
+                          </div>
                           <p className="right-footer-title">MARKET CAP</p>
                         </div>
                         <div className="col-sm-6 col-lg-6 text-center">

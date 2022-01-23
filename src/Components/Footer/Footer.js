@@ -1,6 +1,6 @@
 import React from 'react'
 import LetsSignup from './LetsSignup'
-import "./footer.css"
+import "./style/footer.css"
 export default function Footer() {
     return (
         <footer>

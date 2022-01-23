@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css"
+import "./style/services.css"
 import serviceIcon from "../../images/guaranteesicon.png"
 import serviceIcon2 from "../../images/guaranteesicon2.png"
 import serviceIcon3 from "../../images/guaranteesicon3.png"
@@ -9,9 +9,14 @@ import serviceIcon6 from "../../images/guaranteesicon6.png"
 
 
 import { ServiceItem } from "./ServiceItem";
+import { ThemeContext } from "../../Context/ThemeContext";
+
 export const ServicesMain = () => {
+  const {theme} = React.useContext(ThemeContext)
+
+
   return (
-    <section className="main-services">
+    <section className={`main-services ${theme === "dark" ? "" : " lightServices"}`}>
       <div className="container-lg">
         <div className="row flex-wrap justify-content-center align-items-center">
           

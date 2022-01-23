@@ -1,27 +1,32 @@
 import React, { useState } from "react";
 import { CurrencyBitcoin } from "react-bootstrap-icons";
-import "../BitcoinCalculator/bitcoincalculator.css"
+import "./style/bitcoincalculator.css"
+import { ThemeContext } from "../../Context/ThemeContext";
+import {CoinPriceContext} from "../../Context/CoinPriceContext"
+export default function BtcCalculator() {
 
-export default function BtcCalculator({toggled,coinPrice}) {
-
+  const {theme} = React.useContext(ThemeContext);
+  const {coinPrice} = React.useContext(CoinPriceContext)
   const [newPrice,setNewPrice] = useState("");
-  const changeMoney = ({target:{value}}) =>{
+
+    const changeMoney = ({target:{value}}) =>{
     const inputPrice = Number(value.trim());
     const calculator = (inputPrice / coinPrice).toFixed(5);
-    setNewPrice(calculator)
+      setNewPrice(calculator)
   }
 
   return (
-    <section className={`calculator${toggled ? "" : " bg-main-light"}`}>
+
+    <section className={`calculator${theme === "dark" ? "" : " bg-main-light"}`}>
     <div className="calculator-layout">
       <div className="calculator-area">
         <div className="container-lg">
-          <div className={`cal col-md-12${toggled ? "" : " bg-light"}`}>
+          <div className={`cal col-md-12${theme === "dark" ? "" : " bg-light"}`}>
             <div className="d-flex flex-column justify-content-center align-items-center">
-              <h3 className={`cal-header my-4 text-center${toggled ? "" : " text-dark-main"}`}>
+              <h3 className={`cal-header my-4 text-center${theme === "dark" ? "" : " text-dark-main"}`}>
                 <span>BITCOIN</span> CALCULATOR
               </h3>
-              <p className={`cal-text text-center${toggled ? "" : " text-dark-second"}`}>
+              <p className={`cal-text text-center${theme === "dark" ? "" : " text-dark-second"}`}>
                 FIND OUT THE CURRENT BITCOIN VALUE WITH OUR EASY-TO-USE
                 CONVERTER
               </p>

@@ -7,21 +7,28 @@ import {
   List,
   X,
 } from "react-bootstrap-icons";
-import { useState } from "react";
 
-export default function Navbars({toggled}) {
-  const [activeSearch, setActiveSearch] = useState(false);
+import { ThemeContext } from "../../Context/ThemeContext";
+import { Link } from "react-router-dom";
+import { HeaderContext } from "../../Context/HeaderContext";
+export default function Navbars() {
+  const { theme} = React.useContext(ThemeContext);
+  const {isNavSticky} = React.useContext(HeaderContext)
+  const [activeSearch, setActiveSearch] = React.useState(false);
+
+  console.log(isNavSticky)
+
 
   return (
     <>
-      <nav className={`navbar navbar-expand-md${toggled ? "" : " light-second-bg"}`}>
-        <div className="navbar-area w-100">
+      <nav className={`navbar navbar-expand-md ${isNavSticky ? " stickyNav" : ""}`}>
+        <div className={`navbar-area w-100 ${theme === "dark" ? "" : " light-second-bg"}`}>
           <div className="container-lg">
             <div className="navbar-wrapper">
               <div className="row w-100 justify-content-between align-items-center">
-                <a className="navbar-brand-mobile" href="/">
+                <Link className="navbar-brand-mobile" to="/">
                   <img className="top-logo" src={Logo} alt="" />
-                </a>
+                </Link>
 
                 <div className="hamburger-menu">
                   <button
@@ -41,137 +48,137 @@ export default function Navbars({toggled}) {
               <div className="collapse navbar-collapse" id="navbarToggler">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       HOME
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/about" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/about" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       ABOUT US
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/services" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/services" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       SERVICES
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       PRICING
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       role="button"
                       id="dropdownMenuLink"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      className={`nav-link dropdown-toggle${toggled ? "" : " light-main-font"}`}
+                      className={`nav-link dropdown-toggle${theme === "dark" ? "" : " light-main-font"}`}
                     >
                       BLOG <CaretDownFill />{" "}
-                    </a>
+                    </Link>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className={`dropdown-menu drop-nav${toggled ? "" : " light-second-bg"}`}
+                      className={`dropdown-menu drop-nav${theme === "dark" ? "" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           RIGHT SIDEBAR
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           LEFT SIDEBAR
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           GRID NO SIDEBAR
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           SINGLE POST
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item dropdown">
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       role="button"
                       id="dropdownMenuLink"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      className={`nav-link dropdown-toggle${toggled ? "" : " light-main-font"}`}
+                      className={`nav-link dropdown-toggle${theme === "dark" ? "" : " light-main-font"}`}
                     >
                       PAGES <CaretDownFill />
-                    </a>
+                    </Link>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className={`dropdown-menu drop-nav w-border${toggled ? "" : " light-second-bg"}`}
+                      className={`dropdown-menu drop-nav w-border${theme === "dark" ? "" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           REGISTER PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           LOGIN PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           SHOPPING CART
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           SHOPPING CHECKOUT
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           FAQ PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           404 PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           SERVER ERROR PAGE
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           TERMS OF SERVICES
-                        </a>
+                        </Link>
                       </li>
                       <li className="drop-item">
-                        <a href="/" className={`drop-link${toggled ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
                           COMING SOON
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       CONTACT
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a href="/" className={`nav-link${toggled ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       <CartFill />
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
                     <div
-                      className={`nav-link search-button${toggled ? "" : " light-main-font"}`}
+                      className={`nav-link search-button${theme === "dark" ? "" : " light-main-font"}`}
                       onClick={() => setActiveSearch(true)}
                     >
                       <Search />

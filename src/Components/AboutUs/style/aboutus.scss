@@ -1,0 +1,135 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.2s ease;
+
+.text-main-dark {
+  color: $secondcolor !important;
+}
+.text-second-dark {
+  color: $maincolor !important;
+}
+.bg-second {
+  background-color: #e7e7e7 !important;
+}
+.about-cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.card-main-header {
+  transition: $transition;
+  position: absolute;
+  top: -70px;
+  padding: 40px 10px;
+  left: 0;
+  right: 0;
+  background-color: $maincolor;
+  width: 100%;
+}
+.icon-flex {
+  flex-wrap: nowrap;
+}
+.card-info {
+  width: 250px;
+  .card-main {
+    font-size: 18px;
+    line-height: normal;
+    color: #fff;
+  }
+  p {
+    font-size: 14px;
+
+    color: #ddd;
+  }
+}
+
+.card-icon {
+  width: 75px;
+  vertical-align: initial;
+  height: 50px;
+}
+.about-us-main {
+  padding-top: 10rem;
+}
+.about-header {
+  font-weight: 800;
+  font-size: 45px;
+  color: #fff;
+  text-align: center;
+  span {
+    color: $thirthcolor;
+  }
+}
+
+.about-inner-header {
+  line-height: 32px;
+  color: #fff;
+}
+.about-inner-text {
+  color: $statinfoColor;
+  margin: 20px 0;
+}
+
+.element-header {
+  cursor: pointer;
+  color: $statinfoColor;
+  font-size: 20px;
+}
+.elementselect {
+  color: $thirthcolor !important;
+}
+.result-title {
+  display: block !important;
+}
+.element-result-text.in {
+  opacity: 1 !important;
+}
+.element-header {
+  margin-bottom: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+.element-header:nth-child(2) {
+  border-left: 1px solid $statinfoColor;
+  border-right: 1px solid $statinfoColor;
+  padding: 5px 15px;
+  margin: 0 10px;
+}
+.element-result-text {
+  min-height: 73px;
+  margin: 20px 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+.element-result {
+  color: $statinfoColor;
+}
+.about-button {
+  background-color: transparent;
+  border: 2px solid $thirthcolor;
+  width: 200px;
+  height: 50px;
+  color: $thirthcolor;
+  transition: $transition;
+
+  &:hover {
+    color: #fff;
+    background-color: $thirthcolor;
+  }
+}
+.about-us {
+  background-color: $secondcolor;
+  transition: $transition;
+}
+.our-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

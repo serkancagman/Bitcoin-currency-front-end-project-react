@@ -13,7 +13,9 @@ $transition: all 0.3s linear;
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: $secondcolor;
+}
 .about-title {
   text-align: center;
   color: $statinfoColor;

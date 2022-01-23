@@ -1,20 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { DropletFill, GearWideConnected, X } from "react-bootstrap-icons";
-import "./stylesite.css";
-export default function StyleSite({ toggled, switchTheme }) {
-  const [showSetting, setShowSetting] = useState(false);
+import { ThemeContext } from "../../Context/ThemeContext";
+import "./style/stylesite.css";
 
-  const getSetting = () => {
-    setShowSetting(true);
-  };
-  const outSetting = () => {
-    setShowSetting(false);
-  };
+export default function StyleSite() {
+  const { theme, handleSwitchTheme, handleSetting, showSetting } = React.useContext(ThemeContext);
 
   return (
     <div className="customize">
       <div
-        onClick={() => getSetting()}
+        onClick={handleSetting}
         className={`open-button p-3${showSetting ? " out-open-button" : ""}`}
       >
         <GearWideConnected width={25} height={25} />
@@ -32,8 +27,8 @@ export default function StyleSite({ toggled, switchTheme }) {
           </div>
           <h6>BODY SKIN</h6>
           <div
-            onClick={switchTheme}
-            className={`body-style${toggled ? " night" : ""}`}
+            onClick={handleSwitchTheme}
+            className={`body-style${theme === "dark" ? " night" : ""}`}
           >
             <div className="notch"></div>
             <div className="shapes">
@@ -43,7 +38,7 @@ export default function StyleSite({ toggled, switchTheme }) {
               <div className="shape lg"></div>
             </div>
           </div>
-          <div role="button" onClick={()=> outSetting()} className="close-setting">
+          <div role="button" onClick={handleSetting} className="close-setting">
             <X size={30} />
           </div>
         </div>

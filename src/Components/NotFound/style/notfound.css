@@ -1,0 +1,50 @@
+.not-found {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.error-layout {
+  background-color: #1d1d1dd8;
+  width: 100%;
+  height: 100%;
+}
+
+.error-main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../../images/404.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-error-text {
+  font-size: 220px;
+  color: #aaa;
+  font-weight: 300;
+  line-height: 220px;
+}
+
+.oops {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 650;
+}
+
+.found-info {
+  color: #aaa;
+}
+
+.return-home {
+  margin: 10px auto;
+  display: block;
+  width: 150px;
+  padding: 10px 0;
+  background-color: #fd961a;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+/*# sourceMappingURL=notfound.css.map */

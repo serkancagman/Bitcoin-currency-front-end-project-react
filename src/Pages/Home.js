@@ -9,31 +9,23 @@ import Guarantees from "../Components/Guarantees/Guarantees";
 import HeaderMain from "../Components/Header/Header";
 import StyleSite from "../Components/Stylesite/StyleSite";
 import "../Components/responsive.css";
+import React from "react";
 
-export const Home = ({
-  toggled,
-  switchTheme,
-  coinPrice,
-  coinVolume,
-  coinDayPrice,
-}) => {
+export const Home = () => {
+  
+
   return (
     <>
-      <HeaderMain toggled={toggled}
-      coinPrice={coinPrice}
-      coinVolume={coinVolume}
-      coinDayPrice={coinDayPrice} />
-      <StyleSite toggled={toggled} switchTheme={switchTheme} />
+      <HeaderMain/>
+      <StyleSite />
       <Slider />
-      <AboutUs toggled={toggled} />
-      <Guarantees toggled={toggled} />
-      <Package toggled={toggled} />
-      <BtcCalculator toggled={toggled} 
-      coinPrice={coinPrice}
-      />
-      <Experts toggled={toggled} />
-      <BitcoinNews toggled={toggled} />
-      <Footer toggled={toggled} />
+      <AboutUs />
+      <Guarantees />
+      <Package />
+      <BtcCalculator/>
+      <Experts />
+      <BitcoinNews />
+      <Footer />
     </>
   );
 };

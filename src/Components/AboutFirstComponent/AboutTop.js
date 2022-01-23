@@ -1,9 +1,12 @@
 import React from 'react'
+import { ThemeContext } from '../../Context/ThemeContext';
+export const AboutTop = ({header,headerSecond,bottomHeader}) => {
 
-export const AboutTop = ({header,headerSecond,toggled,bottomHeader}) => {
+  const { theme} = React.useContext(ThemeContext);
+
     return (
         <section className="about-first-item">
-        <div className={`about-overlay${toggled ? "" : " about-after-light"}`}>
+        <div className={`about-overlay${theme === "dark" ? "" : " about-after-light"}`}>
           <div className="container-lg">
             <div className="col-md-12 text-center">
               <div className="about-item-area">

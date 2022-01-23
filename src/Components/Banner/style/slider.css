@@ -1,0 +1,53 @@
+.slider-main {
+  position: relative;
+}
+
+.item {
+  min-height: 500px;
+  margin: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-attachment: fixed;
+}
+
+.first-info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.61);
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide-title {
+  font-size: 68px;
+  line-height: 78px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.slide-title span {
+  color: #fd961a;
+}
+
+.slide-button {
+  border: 2px solid #fd961a;
+  background-color: transparent;
+  color: #fd961a;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.slide-button:hover {
+  background-color: #fd961a;
+  color: #fff;
+}
+/*# sourceMappingURL=slider.css.map */

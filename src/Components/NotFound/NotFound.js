@@ -1,5 +1,5 @@
 import Logo from "../../images/main-logo.png";
-import "./notfound.css";
+import "./style/notfound.css";
 export const NotFound = () => {
   return (
     <section className="not-found">

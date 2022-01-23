@@ -3,43 +3,32 @@ import Wallet from "../../images/walleticon.png";
 import Change from "../../images/changeicon.png";
 import Pocket from "../../images/bitcoinpocketicon.png";
 import Bitchain from "../../images/bitchain.png";
-import "../AboutUs/aboutus.css"
-import { useState } from "react";
+import "./style/aboutus.css"
+import {ThemeContext} from "../../Context/ThemeContext"
+export default function AboutUs() {
 
-export default function AboutUs({toggled}) {
-  const [elementOne, setElementOne] = useState(true);
-  const [elementTwo, setElementTwo] = useState(false);
-  const [elementThree, setElementThree] = useState(false);
+  const {theme} = React.useContext(ThemeContext);
 
-  const showElementOne = () => {
-    setElementOne(true);
-    setElementTwo(false);
-    setElementThree(false);
-  };
-  const showElementTwo = () => {
-    setElementOne(false);
-    setElementTwo(true);
-    setElementThree(false);
-  };
-  const showElementThree = () => {
-    setElementOne(false);
-    setElementTwo(false);
-    setElementThree(true);
-  };
+  const ShowLinks = {
+    "firstItem":"first",
+    "secondItem":"second",
+    "thirthItem":"thirth"
+  }
+  const [currentLink,setCurrentLink] = React.useState(ShowLinks.firstItem)
 
   return (
-    <section className={`about-us${toggled ? "" : " bg-second"}`}>
+    <section className={`about-us${theme === "dark" ? "" : " bg-second"}`}>
       <div className="container-lg">
         <div className="about-cards">
-        <div className={`card-main-header${toggled ? "" : " bg-light"}`}>
+        <div className={`card-main-header${theme === "dark" ? "" : " bg-light"}`}>
         <div className="container-lg">
           <div className="row justify-content-center">
             <div className="col-md-12 col-lg-4">
               <div className="row icon-flex justify-content-center ">
                 <img className="card-icon " src={Wallet} alt="" />
                 <div className="card-info">
-                  <h3 className={`card-main${toggled ? "" : " text-main-dark"}`}>Download Bitcoin Wallet</h3>
-                  <p className={toggled ? "" : " text-second-dark"}>
+                  <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Download Bitcoin Wallet</h3>
+                  <p className={theme === "dark" ? "" : " text-second-dark"}>
                     Get it on PC or Mobile to create, send and receive bitcoins.
                   </p>
                 </div>
@@ -49,8 +38,8 @@ export default function AboutUs({toggled}) {
               <div className="row icon-flex justify-content-center ">
                 <img className="card-icon" src={Change} alt="" />
                 <div className="card-info">
-                  <h3 className={`card-main${toggled ? "" : " text-main-dark"}`}>Buy/Sell with Wallet</h3>
-                  <p className={toggled ? "" : " text-second-dark"}>Enter receiver's address, specify the amount and send.</p>
+                  <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Buy/Sell with Wallet</h3>
+                  <p className={theme === "dark" ? "" : " text-second-dark"}>Enter receiver's address, specify the amount and send.</p>
                 </div>
               </div>
             </div>
@@ -58,8 +47,8 @@ export default function AboutUs({toggled}) {
               <div className="row icon-flex justify-content-center ">
                 <img className="card-icon" src={Pocket} alt="" />
                 <div className="card-info">
-                  <h3 className={`card-main${toggled ? "" : " text-main-dark"}`}>Add coins to your Wallet</h3>
-                  <p className={toggled ? "" : " text-main-dark"}>
+                  <h3 className={`card-main${theme === "dark" ? "" : " text-main-dark"}`}>Add coins to your Wallet</h3>
+                  <p className={theme === "dark" ? "" : " text-main-dark"}>
                     Add bitcoins you’ve created or exchanged via credit card.
                   </p>
                 </div>
@@ -71,12 +60,12 @@ export default function AboutUs({toggled}) {
         </div>
         <div className="about-us-main">
           <div className="col-md-12">
-            <h2 className={`about-header my-4${toggled ? "" : " text-main-dark"}`}>
+            <h2 className={`about-header my-4${theme === "dark" ? "" : " text-main-dark"}`}>
               ABOUT <span>US</span>
             </h2>
             <div className="d-flex justify-content-center align-items-center ">
               <span className="line "></span>
-              <p className={`about-title${toggled ? "" : " text-second-dark"}`}>
+              <p className={`about-title${theme === "dark" ? "" : " text-second-dark"}`}>
                 A COMMERCIAL WEBSITE THAT LISTS WALLETS, EXCHANGES AND OTHER
                 BITCOIN RELATED INFO
               </p>
@@ -88,8 +77,8 @@ export default function AboutUs({toggled}) {
               <img className="img-fluid my-2" src={Bitchain} alt="" />
             </div>
             <div className="col-lg-6 we-are-area">
-              <h3 className={`about-inner-header${toggled ? "" : " text-main-dark"}`}>WE ARE BAYYA</h3>
-              <p className={`about-inner-text${toggled ? "" : " text-second-dark"}`}>
+              <h3 className={`about-inner-header${theme === "dark" ? "" : " text-main-dark"}`}>WE ARE BAYYA</h3>
+              <p className={`about-inner-text${theme === "dark" ? "" : " text-second-dark"}`}>
                 A place for everyone who wants to simply buy and sell Bitcoins.
                 Deposit funds using your Visa/MasterCard or bank transfer.
                 Instant buy/sell of Bitcoins at fair price is guaranteed.
@@ -99,30 +88,30 @@ export default function AboutUs({toggled}) {
               <div className="our-info my-2">
                 <h4 
                 role="button" 
-                onClick={()=> showElementOne()}
-                className={elementOne ? "element-header elementselect": "element-header" }>
+                onClick={()=> setCurrentLink(ShowLinks.firstItem)}
+                className={currentLink === ShowLinks.firstItem ? "element-header elementselect": "element-header" }>
                 
                 OUR MISSION
                 </h4>
-                <h4 role="button" onClick={()=> showElementTwo()} className={elementTwo ? "element-header elementselect": "element-header" }>
+                <h4 role="button" onClick={()=> setCurrentLink(ShowLinks.secondItem)} className={currentLink === ShowLinks.secondItem ? "element-header elementselect": "element-header" }>
                   OUR ADVANTAGES{" "}
                 </h4>
-                <h4 role="button" onClick={()=> showElementThree()} className={elementThree ? "element-header elementselect": "element-header" }>
+                <h4 role="button" onClick={()=> setCurrentLink(ShowLinks.thirthItem)} className={currentLink === ShowLinks.thirthItem ? "element-header elementselect": "element-header" }>
                   OUR GUARANTEES
                 </h4>
               </div>
-              <div className={`element-result${toggled ? "" : " text-second-dark"}`}>
-                <p className={elementOne ? "element-result-text result-title in" : "element-result-text"}>
+              <div className={`element-result${theme === "dark" ? "" : " text-second-dark"}`}>
+                <p className={currentLink === ShowLinks.firstItem ? "element-result-text result-title in" : "element-result-text"}>
                   Bitcoin is based on a protocol known as the blockchain, which
                   allows to create, transfer and verify ultra-secure financial
                   data without interference of third parties.
                 </p>
-                <p className={elementTwo ? "element-result-text result-title in" : "element-result-text"}>
+                <p className={currentLink === ShowLinks.secondItem ? "element-result-text result-title in" : "element-result-text"}>
                   Our mission as an official partner of Bitcoin Foundation is to
                   help you enter and better understand the world of #1
                   cryptocurrency and avoid any issues you may encounter.
                 </p>
-                <p className={elementThree ? "element-result-text result-title in" : "element-result-text"}>
+                <p className={currentLink === ShowLinks.thirthItem ? "element-result-text result-title in" : "element-result-text"}>
                   We are here because we are passionate about open, transparent
                   markets and aim to be a major driving force in widespread
                   adoption, we are the first and the best in cryptocurrency.
