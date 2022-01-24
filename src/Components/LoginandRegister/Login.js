@@ -16,7 +16,7 @@ const Login = () => {
   });
 
   return (
-    <div className="col-lg-8 col-md-8 col-sm-8">
+    <div className="col-lg-8 col-md-8 col-sm-12">
       <div className="w-100" id="loginandRegister">
         <div className="w-100 text-center h-100 loginWrapper d-flex justify-content-center align-items-center">
           <form onSubmit={handleSubmit} id="loginForm">

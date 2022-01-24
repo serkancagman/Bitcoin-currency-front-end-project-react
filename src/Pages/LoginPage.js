@@ -8,7 +8,7 @@ const LoginPage = () => {
   return (
     <section
       id="loginMain"
-      className="d-flex position-relative justify-content-center w-100 h-100"
+      className="position-relative justify-content-center w-100 h-100"
     >
       <FormBanner />
       <Login />

@@ -24,6 +24,9 @@ $transition: all 0.3s linear;
 .formTitle{
     color: $statinfoColor;
 }
+#loginMain{
+    display: flex;
+  }
 #loginForm{
     width: 500px;
 }

@@ -119,13 +119,15 @@ $transition: all 0.2s ease;
 }
 .navbar-area{
   background-color: $secondcolor;
+  min-height: 47px !important;
+  padding: 5px 0 !important;
 }
 
 .forSticky{
   margin-bottom: 47px !important;
 }
 .navbar {
-  min-height: 47px;
+  
   transition: $transition;
   justify-content: center;
   position: relative;

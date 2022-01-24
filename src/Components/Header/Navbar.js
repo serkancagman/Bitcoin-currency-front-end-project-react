@@ -16,7 +16,7 @@ export default function Navbars() {
   const {isNavSticky} = React.useContext(HeaderContext)
   const [activeSearch, setActiveSearch] = React.useState(false);
 
-  console.log(isNavSticky)
+  
 
 
   return (
@@ -25,7 +25,7 @@ export default function Navbars() {
         <div className={`navbar-area w-100 ${theme === "dark" ? "" : " light-second-bg"}`}>
           <div className="container-lg">
             <div className="navbar-wrapper">
-              <div className="row w-100 justify-content-between align-items-center">
+              <div className="d-flex w-100 justify-content-between align-items-center">
                 <Link className="navbar-brand-mobile" to="/">
                   <img className="top-logo" src={Logo} alt="" />
                 </Link>

@@ -148,6 +148,8 @@
 
 .navbar-area {
   background-color: #0a0a0a;
+  min-height: 47px !important;
+  padding: 5px 0 !important;
 }
 
 .forSticky {
@@ -155,7 +157,6 @@
 }
 
 .navbar {
-  min-height: 47px;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   -webkit-box-pack: center;

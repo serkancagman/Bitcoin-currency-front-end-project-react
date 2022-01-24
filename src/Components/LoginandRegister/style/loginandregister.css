@@ -17,6 +17,12 @@
   color: #aaa;
 }
 
+#loginMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #loginForm {
   width: 500px;
 }

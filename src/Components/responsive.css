@@ -31,7 +31,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 769px) and (max-width: 991px) {
   .taks:nth-child(2)::after {
     content: "";
     display: none !important;
@@ -88,7 +88,14 @@ body {
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  #loginForm {
+    width: 300px !important;
+    margin-top: 4rem !important;
+  }
+  #loginMain {
+    display: block !important;
+  }
   .main-error-text {
     font-size: 160px !important;
     color: #aaa;
@@ -223,10 +230,18 @@ body {
 }
 
 @media only screen and (min-width: 376px) and (max-width: 480px) {
+  #loginMain {
+    display: block !important;
+  }
+  #loginForm {
+    width: 300px !important;
+    margin-top: 4rem;
+  }
   .loginLogo {
+    top: 20px !important;
     left: 50% !important;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
   }
   #registerForm {
     width: 300px !important;
@@ -388,14 +403,24 @@ body {
 }
 
 @media only screen and (min-width: 281px) and (max-width: 375px) {
+  .package-header {
+    font-size: 35px !important;
+  }
+  #loginMain {
+    display: block !important;
+  }
   .loginLogo {
     left: 50% !important;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  #loginForm {
+    width: 300px !important;
+    margin-top: 4rem !important;
   }
   #registerForm {
     width: 300px !important;
-    margin-top: 4rem;
+    margin-top: 4rem !important;
   }
   .formHeader {
     font-size: 2rem !important;
