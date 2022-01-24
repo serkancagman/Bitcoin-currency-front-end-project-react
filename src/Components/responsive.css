@@ -225,7 +225,7 @@ body {
     display: none !important;
   }
   .customize {
-    display: none !important;
+    top: 30% !important;
   }
 }
 

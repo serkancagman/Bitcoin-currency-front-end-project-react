@@ -4,15 +4,12 @@ import "./style/loginandregister.css";
 import { useFormik } from "formik";
 import validationSchema from "./Validation/RegisterValidation"
 const Login = () => {
-  const { handleChange, handleBlur, values,errors, touched, handleSubmit } = useFormik({
+  const { handleChange, handleBlur,errors, touched, handleSubmit } = useFormik({
     initialValues: {
       email: "",
       name: "",
       password: "",
       passwordConfirm: "",
-    },
-    onSubmit: (values) => {
-      console.log(values);
     },validationSchema
   });
 
