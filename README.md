@@ -1,8 +1,8 @@
 # HELLO EVERYONE
 
-## This is my first responsive React project using SCSS.
+## This is responsive react project using SCSS.
 
-### This is a project where I realized how late I was to use SCSS.
+## [You can see here](http://fervent-lamport-f2eef9.netlify.app)
 
 ### What is this project ?
 
