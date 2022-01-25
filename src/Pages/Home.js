@@ -10,22 +10,30 @@ import HeaderMain from "../Components/Header/Header";
 import StyleSite from "../Components/Stylesite/StyleSite";
 import "../Components/responsive.css";
 import React from "react";
+import PreLoader from "../Components/PreLoader/PreLoader";
+import { PreLoaderContext } from "../Context/PreLoader";
 
 export const Home = () => {
-  
+  const { isLoadingPage } = React.useContext(PreLoaderContext);
 
   return (
     <>
-      <HeaderMain/>
-      <StyleSite />
-      <Slider />
-      <AboutUs />
-      <Guarantees />
-      <Package />
-      <BtcCalculator/>
-      <Experts />
-      <BitcoinNews />
-      <Footer />
+      {isLoadingPage ? (
+        <PreLoader />
+      ) : (
+        <>
+          <HeaderMain />
+          <StyleSite />
+          <Slider />
+          <AboutUs />
+          <Guarantees />
+          <Package />
+          <BtcCalculator />
+          <Experts />
+          <BitcoinNews />
+          <Footer />
+        </>
+      )}
     </>
   );
 };

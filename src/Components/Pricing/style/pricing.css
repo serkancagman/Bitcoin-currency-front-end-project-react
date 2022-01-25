@@ -1,0 +1,81 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+#pricing {
+  padding: 3rem 0;
+}
+
+.pricingInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1d1d1d;
+  padding: 30px;
+}
+
+.pricingInner h2 {
+  letter-spacing: 2px;
+  font-size: 24px;
+  line-height: 3rem;
+  margin-bottom: 15px;
+}
+
+.pricingInner h2 span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 20px;
+}
+
+.bgDark {
+  background-color: #0a0a0a !important;
+}
+
+.bgLight {
+  background-color: #E7E7E7 !important;
+}
+
+.textDark {
+  color: #0a0a0a !important;
+}
+
+.mainPrice {
+  margin: 20px 0;
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+
+.buyButton {
+  background-color: #fd961a;
+  font-weight: 600;
+  color: #fff;
+  outline: none;
+  border: 1px solid #fd961a;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.buyButton:hover {
+  background-color: transparent !important;
+  color: #fd961a !important;
+}
+
+.pricingSub {
+  margin: 20px 0;
+  color: #666;
+  text-align: center;
+}
+
+.pricingHeader {
+  margin: 20px 0;
+  color: #fff;
+  text-align: center;
+}
+/*# sourceMappingURL=pricing.css.map */

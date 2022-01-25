@@ -149,7 +149,7 @@
 .navbar-area {
   background-color: #0a0a0a;
   min-height: 47px !important;
-  padding: 5px 0 !important;
+  padding: 2px 0 !important;
 }
 
 .forSticky {
@@ -321,5 +321,25 @@
   right: 0;
   z-index: 999;
   border-bottom: 1px solid #1d1d1d;
+}
+
+.dropDark {
+  background-color: #0a0a0a !important;
+}
+
+.dropDarkLink {
+  color: #aaa;
+}
+
+.dropDarkLink:hover {
+  color: #fd961a !important;
+}
+
+.dropLightLink {
+  color: #0a0a0a !important;
+}
+
+.dropLightLink:hover {
+  color: #fd961a !important;
 }
 /*# sourceMappingURL=header.css.map */

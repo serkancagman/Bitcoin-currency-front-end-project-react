@@ -1,0 +1,45 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bluetheme:#0095EB;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.2s ease;
+
+
+
+
+#preLoader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $secondcolor;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loaderImage{
+    width: 200px;
+    opacity: 0;
+    animation: preLoader 1s infinite;
+}
+
+@keyframes preLoader {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

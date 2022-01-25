@@ -1,0 +1,75 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bluetheme:#0095EB;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.2s ease;
+
+
+#pricing{
+    padding: 3rem 0;
+}
+
+.pricingInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $maincolor;
+    padding: 30px;
+
+    h2{
+        letter-spacing: 2px;
+        font-size: 24px;
+        line-height: 3rem;
+        margin-bottom: 15px;
+        span{
+            text-transform: uppercase;
+            display: block;
+            font-size: 20px;
+        }
+    }
+}
+.bgDark{
+    background-color: $secondcolor !important;
+}
+.bgLight{
+    background-color: #E7E7E7 !important;
+}
+.textDark{
+    color: $secondcolor !important;
+}
+.mainPrice{
+    margin: 20px 0;
+    font-size: 2.7rem;
+    font-weight: 600;
+}
+.buyButton{
+    background-color: $thirthcolor;
+    font-weight: 600;
+    color: #fff;
+    outline: none;
+    border: 1px solid $thirthcolor;
+    transition: $transition;
+
+    &:hover{
+        background-color: transparent !important;
+        color: $thirthcolor !important;
+    }
+}
+.pricingSub{
+    margin: 20px 0;
+    color: #666;
+    text-align: center;
+}
+.pricingHeader{
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+}

@@ -120,7 +120,7 @@ $transition: all 0.2s ease;
 .navbar-area{
   background-color: $secondcolor;
   min-height: 47px !important;
-  padding: 5px 0 !important;
+  padding: 2px 0 !important;
 }
 
 .forSticky{
@@ -249,4 +249,22 @@ $transition: all 0.2s ease;
   right: 0;
   z-index: 999;
   border-bottom: 1px solid $maincolor;
+}
+.dropDark{
+  background-color: $secondcolor !important;
+}
+
+.dropDarkLink{
+  color: $statinfoColor;
+
+  &:hover{
+    color: $thirthcolor !important ;
+  }
+}
+.dropLightLink{
+  color: $secondcolor !important;
+
+  &:hover{
+    color: $thirthcolor !important;
+  }
 }

@@ -14,7 +14,7 @@ export const CoinPriceProvider = ({ children }) => {
   React.useEffect(() => {
     const getData = async () => {
       const baseURL =
-        (`${process.env.REACT_APP_API_ENDPOINT}`);
+        "https://api.coingecko.com/api/v3/coins/bitcoin?tickers=true&market_data=true&community_data=true&developer_data=true&sparkline=true";
       const response = await axios(baseURL);
       setCoinPrice(response.data.market_data.current_price.usd);
       setCoinVolume(

@@ -11,10 +11,12 @@ $transition: all 0.2s ease;
 
 
 .customize{
-    position: fixed;
+    position: fixed; 
     z-index: 99999;
     top: 30%;
     left: 0;
+    width: 60px;
+    height: 60px;
     
     .open-button{
         z-index: 1;

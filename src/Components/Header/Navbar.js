@@ -63,7 +63,7 @@ export default function Navbars() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
+                    <Link to="/pricing" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
                       PRICING
                     </Link>
                   </li>
@@ -80,25 +80,25 @@ export default function Navbars() {
                     </Link>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className={`dropdown-menu drop-nav${theme === "dark" ? "" : " light-second-bg"}`}
+                      className={`dropdown-menu drop-nav${theme === "dark" ? " dropDark" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="blog" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           RIGHT SIDEBAR
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           LEFT SIDEBAR
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           GRID NO SIDEBAR
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           SINGLE POST
                         </Link>
                       </li>
@@ -117,62 +117,62 @@ export default function Navbars() {
                     </Link>
                     <ul
                       aria-labelledby="dropdownMenuLink"
-                      className={`dropdown-menu drop-nav w-border${theme === "dark" ? "" : " light-second-bg"}`}
+                      className={`dropdown-menu drop-nav w-border${theme === "dark" ? " dropDark" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           REGISTER PAGE
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           LOGIN PAGE
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           SHOPPING CART
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           SHOPPING CHECKOUT
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           FAQ PAGE
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           404 PAGE
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           SERVER ERROR PAGE
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           TERMS OF SERVICES
                         </Link>
                       </li>
                       <li className="drop-item">
-                        <Link to="/" className={`drop-link${theme === "dark" ? "" : " text-dark"}`}>
+                        <Link to="/" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           COMING SOON
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="nav-item">
-                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? " dropDarkLink" : " light-main-font"}`}>
                       CONTACT
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link to="/" className={`nav-link${theme === "dark" ? "" : " light-main-font"}`}>
+                    <Link to="/" className={`nav-link${theme === "dark" ? " dropDarkLink" : " light-main-font"}`}>
                       <CartFill />
                     </Link>
                   </li>
