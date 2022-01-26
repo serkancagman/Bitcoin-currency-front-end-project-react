@@ -1,10 +1,179 @@
 $maincolor: #1d1d1d;
 $secondcolor: #0a0a0a;
 $thirthcolor: #fd961a;
-$bluetheme:#0095EB;
+$bluetheme: #0095eb;
 $bitcoinnews: #0a0a0a71;
 $statSize: 13px;
 $statWeight: 800;
 $statinfoSize: 12px;
 $statinfoColor: #aaa;
 $transition: all 0.2s ease;
+
+#blogPosts {
+  padding: 4rem 0;
+}
+
+.bi {
+  &::before {
+    line-height: 2 !important;
+  }
+}
+i {
+  font-style: normal;
+}
+.bi-person-fill {
+  color: $thirthcolor;
+}
+.blogowner {
+  color: $thirthcolor !important;
+}
+.blogComment {
+  color: $thirthcolor !important;
+  text-decoration: none;
+}
+.bi-tags-fill {
+  color: $thirthcolor;
+}
+.postTag {
+  color: #666;
+}
+.bi-calendar-range {
+  color: $thirthcolor;
+}
+.blogCalendar {
+  color: #666;
+}
+.permalink {
+  color: $thirthcolor !important;
+}
+.blogFigure {
+  margin: 1.2rem 0;
+}
+
+.postLink {
+  font-size: 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    color: $thirthcolor !important;
+  }
+}
+.PostTitle {
+  color: #666;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.postButton {
+  display: block;
+  width: 250px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 2rem 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: $thirthcolor;
+  border: 1px solid $thirthcolor;
+}
+.postInfo {
+  padding: 10px 10px;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+.postWrapper {
+  margin: 3rem 0;
+}
+.blogNav {
+  background-color: $maincolor;
+  padding: 2rem;
+  .blogList {
+    padding: 0;
+    .blogItem {
+      list-style: none;
+      margin: 0;
+      padding: 1rem 0;
+      border-bottom: 1px solid #333;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      .blogLink {
+        color: $statinfoColor;
+        transition: $transition;
+
+        text-decoration: none;
+        &:hover {
+          color: $thirthcolor !important;
+        }
+      }
+    }
+  }
+}
+.blogasideH {
+  color: #fff;
+  margin: 1rem 0;
+}
+.recentPosts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recentImg {
+  width: 100px;
+  height: 70px;
+}
+.recentInner {
+  margin: 0 10px;
+
+  .recentHeader {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+      color: $thirthcolor !important;
+    }
+  }
+  .bi-clock {
+    color: #666;
+    font-weight: 600;
+    font-size: 15px;
+  }
+}
+.recentPosts {
+}
+.recentItem {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #333;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.recentTitle {
+  color: #666;
+  font-size: 13px;
+}
+.tagLink{
+    padding: 10px 15px;
+    margin: 5px;
+    color: $statinfoColor;
+    text-decoration: none;
+    border: 1px solid $statinfoColor;
+    transition: $transition;
+    &:hover{
+        border:1px solid $thirthcolor;
+        background-color: $thirthcolor;
+        color: #fff;
+    }
+    
+}
+.page-link{
+    padding: 10px 1rem !important;
+    border: 1px solid #333 !important;
+    border-radius: 0 !important;
+    background-color: transparent !important;
+    color: #fff  !important;
+}
+.active{
+    color: #fff !important;
+}

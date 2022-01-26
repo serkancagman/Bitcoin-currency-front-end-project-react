@@ -83,7 +83,7 @@ export default function Navbars() {
                       className={`dropdown-menu drop-nav${theme === "dark" ? " dropDark" : " light-second-bg"}`}
                     >
                       <li className="drop-item">
-                        <Link to="blog" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
+                        <Link to="/blog" className={`drop-link${theme === "dark" ? " dropDarkLink" : " dropLightLink"}`}>
                           RIGHT SIDEBAR
                         </Link>
                       </li>
