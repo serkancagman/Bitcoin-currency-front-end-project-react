@@ -1,0 +1,164 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+
+table{
+    border: none !important;
+}
+tr{
+    border: none !important;
+    vertical-align: middle !important;
+}
+th{
+    border: none !important;
+    padding: 1.5rem 0 !important;
+}
+td{
+    border-bottom:1px solid #333 !important;
+    padding: 1.5rem 0 !important;
+}
+.cartQuantity{
+
+
+    input{
+        background-color: transparent;
+        color: #fff;
+        outline: none;
+        border:1px solid #333;
+        padding: 5px 12px;
+        font-size: 17px;
+        min-width: 36px;
+    }
+
+    input[type="text"]{
+        width: 70px;
+        padding: 5px 20px;
+        text-align: center;
+    }
+}
+#plusItem{
+    transition: $transition;
+     &:hover{
+                background-color: $thirthcolor;}
+        
+}
+#minusItem{
+    transition: $transition;
+    &:hover{
+                background-color: $thirthcolor;}
+}
+.tHeader{
+    background-color: $maincolor;
+    font-size: 1rem;
+}
+.totalPrice{
+    min-width: 87px;
+}
+.tableItems{
+    border-top: none !important;
+
+}
+
+.couponBtn{
+    background-color: transparent;
+    color: $statinfoColor;
+    border: 1px solid $statinfoColor;
+    padding: .7rem 20px;
+    font-size: 1rem;
+    width: 160px;
+    margin: 1rem;
+    transition: all .2s linear;
+
+    &:hover{
+       border:1px solid $thirthcolor !important;
+        color: $thirthcolor;
+    }
+}
+
+#couponInput{
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    border: 1px solid #666;
+    padding: .7rem 20px;
+    font-size: 1rem;
+    margin: 1rem;
+    transition: all .2s linear;
+    width: 160px;
+
+    &::placeholder{
+        color: #666;
+    }
+}
+.totalPriceValue{
+    float: right;
+    font-size: 20px;
+    color: $statinfoColor;
+}
+.totalPriceText{
+    
+    font-size: 20px;
+    color: $statinfoColor;
+}
+
+.totalPrice{
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+.totalHeader{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.cartTotal{
+    margin: 4rem 0;
+}
+.totalPriceTitle{
+    font-size: 1.6rem;
+    
+    color: #fff;
+    font-weight: 600;
+}
+.totalMainPrice{
+    padding: 2rem 0;
+}
+.totalPriceValueLast{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 600;
+    float: right;
+}
+.checkoutBtn{
+    
+    background-color: $thirthcolor;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+   
+    font-weight: 600;
+    transition: all .2s linear;
+    &:hover{
+        background-color: transparent !important;
+        color: $thirthcolor;
+        border: 1px solid $thirthcolor;
+    }
+}
+.cartBtn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.trashHeader{
+    padding: 0 1rem !important;
+}
+.cartProductHeader{
+    padding: 0 !important;
+}

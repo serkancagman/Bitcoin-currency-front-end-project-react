@@ -26,17 +26,17 @@ const BlogItems = ({ postImg, postHeader, postTitle }) => {
               </Link>
               <span className="blogCalendar mx-2">
                 {" "}
-                <i class="bi mx-1 bi-calendar-range"> </i> 23 Agust 2021
+                <i className="bi mx-1 bi-calendar-range"> </i> 23 Agust 2021
               </span>
               <Link to="/#" className="blogComment mx-2">
-                <i class="bi bi-chat-dots-fill"></i> 15 comments
+                <i className="bi bi-chat-dots-fill"></i> 15 comments
               </Link>
               <span className="postTag mx-2">
-                <i class="bi mx-1 bi-tags-fill"></i>cryptocurrency, market,
+                <i className="bi mx-1 bi-tags-fill"></i>cryptocurrency, market,
                 trading
               </span>
               <Link to="/#" className="permalink mx-2 text-decoration-none">
-                <i class="bi bi-link-45deg"></i> permalink
+                <i className="bi bi-link-45deg"></i> permalink
               </Link>
             </div>
           </div>

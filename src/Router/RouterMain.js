@@ -2,14 +2,14 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
-import BlogPageTwo from "../Pages/BlogPageTwo";
-import BlogPageThree from "../Pages/BlogPageThree";
+import BlogLeft from "../Pages/BlogLeft";
 import { ErrorPage } from "../Pages/ErrorPage";
 import { Home } from "../Pages/Home";
 import LoginPage from "../Pages/LoginPage";
 import PricingPage from "../Pages/PricingPage";
 import RegisterPage from "../Pages/RegisterPage";
 import { Services } from "../Pages/Services";
+import ShopCartPage from "../Pages/ShopCartPage";
 
 const RouterMain = () => {
   return (
@@ -22,8 +22,8 @@ const RouterMain = () => {
       <Route path="register" element={<RegisterPage />} />
       <Route path="pricing" element={<PricingPage/>} />
       <Route path="blog" element={<Blog/>} />
-      <Route path="blog/2" element={<BlogPageTwo />} />
-      <Route path="blog/3" element={<BlogPageThree />} />
+      <Route path="blogleft" element={<BlogLeft  />} />
+      <Route path="shopcart" element={<ShopCartPage/>} />
     </Routes>
   );
 };

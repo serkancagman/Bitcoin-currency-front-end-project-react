@@ -8,7 +8,7 @@ import BlogNav from "./BlogNav";
 import RecentPosts from "./RecentPosts";
 import BlogTags from "./BlogTags";
 
-const BlogPosts = () => {
+const BlogPosts = ({flexType}) => {
   const blogCategories = [
     "INSURANCE",
     "ANNOUNCEMENT",
@@ -33,7 +33,7 @@ const BlogPosts = () => {
   return (
     <section id="blogPosts">
       <div className="container-lg">
-        <div className="row justify-content-center">
+        <div className={`row justify-content-center ${flexType}`}>
           <div className="col-lg-8 col-md-12">
             <BlogItems
               postImg={blogImg}

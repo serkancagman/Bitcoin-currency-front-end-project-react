@@ -5,8 +5,8 @@ const BlogNav = ({links, navHeader}) => {
   return <div className='blogNav my-4'>
       <h4 className='blogasideH'>{navHeader}</h4>
       <ul className="blogList">
-          {links.map(navitems =>{
-              return    <li className="blogItem"><Link to="/#" className='blogLink'>{navitems}</Link></li>
+          {links.map((navitems, i) =>{
+              return    <li key={i} className="blogItem"><Link to="/#" className='blogLink'>{navitems}</Link></li>
           })}
       </ul>
   </div>;

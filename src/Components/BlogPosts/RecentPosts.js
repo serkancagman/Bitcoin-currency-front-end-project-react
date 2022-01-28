@@ -7,9 +7,9 @@ const RecentPosts = ({ navHeader }) => {
     <div className="blogNav my-4">
       <h4 className="blogasideH">{navHeader}</h4>
       <ul className="blogList">
-        {blogArchive.map((navitems) => {
+        {blogArchive.map((navitems, i) => {
           return (
-            <li className="recentItem">
+            <li key={i} className="recentItem">
               <div className="recentPosts">
                 <Link to={navitems.link} className="recentImgLink">
                   <img src={navitems.imgURL} alt="..." className="recentImg" />
@@ -19,7 +19,7 @@ const RecentPosts = ({ navHeader }) => {
                     {navitems.header}
                   </Link>
                   <p className="m-0 recentTitle">
-                    <i class="bi bi-clock me-1"></i> {navitems.title}
+                    <i className="bi bi-clock me-1"></i> {navitems.title}
                   </p>
                 </div>
               </div>
