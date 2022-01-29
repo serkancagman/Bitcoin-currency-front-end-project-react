@@ -3,13 +3,17 @@ import "./style/slider.css";
 import SliderItem from "../../images/slideritem.jpg";
 import SliderItem1 from "../../images/slideritem2.jpg";
 import SliderItem2 from "../../images/slideritem3.jpg";
+
 export default function Slider() {
   return (
     <section className="slider-main">
       <div id="slideControl" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <div style={{backgroundImage:`url(${SliderItem})`}} className="w-100 h-100 item first-item "></div>
+            <div
+              style={{ backgroundImage: `url(${SliderItem})` }}
+              className="w-100 h-100 item first-item "
+            ></div>
             <div className="first-info">
               <div className="row m-0 w-100 h-100 justify-content-center align-items-center">
                 <div className="col-md-12 text-center">
@@ -24,7 +28,10 @@ export default function Slider() {
             </div>
           </div>
           <div className="carousel-item">
-            <div style={{backgroundImage:`url(${SliderItem1})`}} className=" item second-item "></div>
+            <div
+              style={{ backgroundImage: `url(${SliderItem1})` }}
+              className=" item second-item ">
+              </div>
             <div className="first-info">
               <div className="row m-0 w-100 h-100 justify-content-center align-items-center">
                 <div className="col-md-12 text-center">
@@ -40,7 +47,10 @@ export default function Slider() {
             </div>
           </div>
           <div className="carousel-item">
-            <div style={{backgroundImage:`url(${SliderItem2})`}} className=" item thirth-item "></div>
+            <div
+              style={{ backgroundImage: `url(${SliderItem2})` }}
+              className=" item thirth-item "
+            ></div>
             <div className="first-info">
               <div className="row m-0 w-100 h-100 justify-content-center align-items-center">
                 <div className="col-md-12 text-center">

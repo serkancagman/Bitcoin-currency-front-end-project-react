@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BlogTags = ({ navHeader }) => {
   return (
-    <div className="blogNav my-4">
+    <div className="blogNav">
       <h4 className="blogasideH">{navHeader}</h4>
       <div className="blogTags d-flex flex-wrap">
         <Link to="/#" className="tagLink mx-1">

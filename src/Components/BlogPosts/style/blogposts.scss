@@ -177,3 +177,15 @@ i {
 .active{
     color: #fff !important;
 }
+.postWrapper{
+  &:first-child{
+    margin-top: 0 !important;
+  }
+}
+.blogNav{
+
+  margin-top: 3rem;
+  &:first-child{
+    margin-top: 0 !important;
+  }
+}

@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
 import BlogLeft from "../Pages/BlogLeft";
+import CheckoutPage from "../Pages/CheckoutPage";
 import { ErrorPage } from "../Pages/ErrorPage";
 import { Home } from "../Pages/Home";
 import LoginPage from "../Pages/LoginPage";
@@ -24,6 +25,7 @@ const RouterMain = () => {
       <Route path="blog" element={<Blog/>} />
       <Route path="blogleft" element={<BlogLeft  />} />
       <Route path="shopcart" element={<ShopCartPage/>} />
+      <Route path="checkout" element={<CheckoutPage />} />
     </Routes>
   );
 };

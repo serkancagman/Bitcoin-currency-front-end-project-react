@@ -31,7 +31,7 @@ export const HeaderProvider = ({ children }) => {
     } else {
       setIsNavSticky(false);
     }
-  }, [navPosition]);
+  }, [navPosition,currentScreen]);
 
 
   const handleScroll = () => {

@@ -1,0 +1,112 @@
+.checkout {
+  padding: 3.5rem 0;
+}
+
+.isCustomerHeader {
+  color: #aaa;
+  font-size: 15px;
+}
+
+.isCustomerHeader .clicktoLogin {
+  text-decoration: none;
+  color: #fd961a;
+}
+
+.checkoutHeader {
+  color: #fff;
+  font-size: 25px;
+  margin: 1.3rem 0;
+}
+
+.checkoutInput {
+  background-color: #1d1d1d;
+  border: 1px solid #333;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+}
+
+.checkoutInput:focus {
+  border: 1px solid #aaa !important;
+}
+
+.adressTitle {
+  background-color: #1d1d1d;
+  border: 1px solid #333;
+  padding: 0.7rem 1rem;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  min-height: 150px;
+}
+
+.adressTitle:focus {
+  border: 1px solid #aaa !important;
+}
+
+.createAccountRadio {
+  font-size: 15px;
+  color: #aaa;
+}
+
+.checkoutThead {
+  background-color: #1d1d1d;
+  color: #666;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 0.7rem 1rem;
+}
+
+.checkoutThead tr th {
+  padding: 0.7rem 1rem !important;
+}
+
+.checkoutTbody tr td {
+  padding: 1.2rem !important;
+  color: #fff !important;
+}
+
+.checkoutTH {
+  background-color: #1d1d1d;
+  color: #666;
+  padding: 1.2rem !important;
+}
+
+.paypalHeader {
+  color: #fd961a;
+  position: relative;
+}
+
+.paypalHeader:hover::before {
+  display: block !important;
+}
+
+.paypalHeader::before {
+  content: "PayPal is a service that enables you to pay, send money, and accept payments. Register your credit card or debit card with your PayPal account. You can pay by simply choosing PayPal at checkout";
+  position: absolute;
+  font-size: 12px;
+  width: 230px;
+  bottom: 20px;
+  left: 0;
+  color: #fff;
+  display: none;
+  background-color: #0a0a0a;
+  padding: 20px;
+}
+
+.cheque {
+  padding: 2rem 2.4rem;
+}
+
+.cheque:first-child {
+  border-bottom: 1px solid #333;
+}
+
+.checkoutPayment {
+  background-color: #1d1d1d;
+  color: #aaa;
+  height: 100%;
+}
+/*# sourceMappingURL=shopcheckout.css.map */

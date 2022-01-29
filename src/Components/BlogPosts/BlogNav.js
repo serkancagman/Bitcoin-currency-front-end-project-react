@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogNav = ({links, navHeader}) => {
-  return <div className='blogNav my-4'>
+  return <div className='blogNav'>
       <h4 className='blogasideH'>{navHeader}</h4>
       <ul className="blogList">
           {links.map((navitems, i) =>{

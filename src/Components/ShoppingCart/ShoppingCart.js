@@ -1,24 +1,11 @@
 import React from "react";
 import "./style/shopcart.css";
+import { ShopCartContext } from "../../Context/ShopCartContext";
+import { Link } from "react-router-dom";
+
 const ShoppingCart = () => {
-  const [quantity, setQuantity] = React.useState(1);
-  const [price, setPrice] = React.useState(589.31);
-  const [total, setTotal] = React.useState(price);
-  const [mainPrice, setMainPrice] = React.useState(607,31);
-  const handleChange = (event) => {
-    setQuantity(event.target.value);
-  };
-
-  React.useEffect(() => {
-    let totalPrice = quantity * price;
-    let LastPrice = totalPrice * 2 /100  + total;
-    if(quantity <= 0){
-        setQuantity(1);}
-
-    setTotal(Math.round(totalPrice * 100) / 100);
-    setMainPrice(LastPrice)
-
-  },[quantity,price,mainPrice]);
+  const { quantity, handleChange, mainPrice, total, price, setQuantity } =
+    React.useContext(ShopCartContext);
 
   return (
     <section className="py-5" id="shopCart">
@@ -37,7 +24,9 @@ const ShoppingCart = () => {
             <tbody className="tableItems">
               <tr className="fs-6">
                 <td className="deleteCartItem text-center">
-                  <span><i className="bi bi-trash"></i></span>
+                  <span>
+                    <i className="bi bi-trash"></i>
+                  </span>
                 </td>
                 <td>
                   <span className="shopProduct">0.179 BTC</span>
@@ -45,7 +34,12 @@ const ShoppingCart = () => {
                 <td className="shopPrice">${price}</td>
                 <td className="shopQuantity">
                   <div className="cartQuantity">
-                    <input type="button" id="minusItem" onClick={()=> setQuantity(Number(quantity) -1)} value="-" />
+                    <input
+                      type="button"
+                      id="minusItem"
+                      onClick={() => setQuantity(Number(quantity) - 1)}
+                      value="-"
+                    />
                     <input
                       type="text"
                       value={quantity}
@@ -53,7 +47,12 @@ const ShoppingCart = () => {
                       onChange={handleChange}
                       id="quantity"
                     />
-                    <input type="button" onClick={()=> setQuantity(Number(quantity) +1)} id="plusItem" value="+" />
+                    <input
+                      type="button"
+                      onClick={() => setQuantity(Number(quantity) + 1)}
+                      id="plusItem"
+                      value="+"
+                    />
                   </div>
                 </td>
                 <td className="totalPrice">${total}</td>
@@ -61,23 +60,30 @@ const ShoppingCart = () => {
             </tbody>
           </table>
           <div className="cartOption">
-            <input type="text" placeholder="COUPON CODE" name="coupon" id="couponInput" />
+            <input
+              type="text"
+              placeholder="COUPON CODE"
+              name="coupon"
+              id="couponInput"
+            />
             <button className="couponBtn">APPLY COUPON</button>
           </div>
-            <div className="cartTotal">
-                <h6 className="totalHeader">CART TOTALS</h6>
-                <div className="totalPrice">
-                    <span className="totalPriceText">Price Without Tax</span>
-                    <span className="totalPriceValue">${total}</span>
-                </div>
-                <div className="totalMainPrice">
-                    <span className="totalPriceTitle">Total</span>
-                    <span className="totalPriceValueLast">${Math.round(mainPrice * 100)/100}</span>
-                </div>
-                </div>
-            <div className="cartBtn">
-                <button className="checkoutBtn">PROCEED TO CHECKOUT</button>
+          <div className="cartTotal">
+            <h6 className="totalHeader">CART TOTALS</h6>
+            <div className="totalPrice">
+              <span className="totalPriceText">Price Without Tax</span>
+              <span className="totalPriceValue">${total}</span>
             </div>
+            <div className="totalMainPrice">
+              <span className="totalPriceTitle">Total</span>
+              <span className="totalPriceValueLast">
+                ${Math.round(mainPrice * 100) / 100}
+              </span>
+            </div>
+          </div>
+          <div className="cartBtn">
+            <Link to="/checkout" className="checkoutBtn">PROCEED TO CHECKOUT</Link>
+          </div>
         </div>
       </div>
     </section>

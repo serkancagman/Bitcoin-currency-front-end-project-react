@@ -1,0 +1,124 @@
+$maincolor: #1d1d1d;
+$secondcolor: #0a0a0a;
+$thirthcolor: #fd961a;
+$bitcoinnews: #0a0a0a71;
+$statSize: 13px;
+$statWeight: 800;
+$statinfoSize: 12px;
+$statinfoColor: #aaa;
+$transition: all 0.3s linear;
+
+
+
+.checkout{
+  padding: 3.5rem 0;
+}
+
+
+
+
+.isCustomerHeader {
+  color: $statinfoColor;
+  font-size: 15px;
+
+  .clicktoLogin {
+    text-decoration: none;
+    color: $thirthcolor;
+  }
+}
+
+.checkoutHeader {
+  color: #fff;
+  font-size: 25px;
+  margin: 1.3rem 0;
+}
+.checkoutInput {
+  background-color: $maincolor;
+  border: 1px solid #333;
+  padding: 0.7rem 1rem;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+
+  &:focus {
+    border: 1px solid $statinfoColor !important;
+  }
+}
+.adressTitle {
+  background-color: $maincolor;
+  border: 1px solid #333;
+  padding: 0.7rem 1rem;
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  min-height: 150px;
+  &:focus {
+    border: 1px solid $statinfoColor !important;
+  }
+}
+.createAccountRadio {
+  font-size: 15px;
+  color: $statinfoColor;
+}
+.checkoutThead {
+  background-color: $maincolor;
+  color: #666;
+  font-size: 15px;
+  font-weight: 800;
+  padding: 0.7rem 1rem;
+
+  tr {
+    th {
+      padding: 0.7rem 1rem !important;
+    }
+  }
+}
+.checkoutTbody {
+  tr {
+    td {
+      padding: 1.2rem !important;
+      color: #fff !important;
+    }
+  }
+}
+.checkoutTH {
+  background-color: $maincolor;
+  color: #666;
+  padding: 1.2rem !important;
+}
+.paypalHeader {
+  color: $thirthcolor;
+  position: relative;
+
+  &:hover{
+    &::before{
+      display: block !important;
+    }
+  }
+
+  &::before {
+    content: "PayPal is a service that enables you to pay, send money, and accept payments. Register your credit card or debit card with your PayPal account. You can pay by simply choosing PayPal at checkout";
+    position: absolute;
+    font-size: 12px;
+    width: 230px;
+    bottom: 20px;
+    left: 0;
+    color: #fff;
+    display: none;
+    background-color: $secondcolor;
+    padding: 20px;
+  }
+}
+.cheque {
+  padding: 2rem 2.4rem;
+
+  &:first-child{
+    border-bottom: 1px solid #333;
+  }
+}
+.checkoutPayment {
+  background-color: $maincolor;
+  color: $statinfoColor;
+  height: 100%;
+}

@@ -5,6 +5,7 @@ import { CoinPriceProvider } from "./Context/CoinPriceContext";
 import { PreLoaderProvider } from "./Context/PreLoader";
 
 import RouterMain from "./Router/RouterMain";
+import { ShopCartProvider } from "./Context/ShopCartContext";
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
         <ThemeProvider>
           <CoinPriceProvider>
             <HeaderProvider>
-              <RouterMain />
+              <ShopCartProvider>
+                <RouterMain />
+              </ShopCartProvider>
             </HeaderProvider>
           </CoinPriceProvider>
         </ThemeProvider>

@@ -1,6 +1,8 @@
 import React from "react";
 import Payment from "../../images/payments.png";
 import { Link } from "react-router-dom";
+
+
 export default function LetsSignup() {
   return (
     <>
@@ -22,7 +24,7 @@ export default function LetsSignup() {
             </div>
             <div className="footer-links">
               <div className="container-lg">
-                <div className="row justify-content-center ">
+                <div className="row justify-content-center text-center">
                   <div className="col-xs-4 col-sm-4 col-xl-2">
                     <h5 className="footer-nav-header">OUR COMPANY</h5>
                     <ul className="footer-nav">

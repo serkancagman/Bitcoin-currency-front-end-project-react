@@ -22,9 +22,9 @@ export const CoinPriceProvider = ({ children }) => {
           response.data.market_data.price_change_percentage_24h * 100
         ) / 100
       );
-      setCoinDayPrice(Math.floor(response.data.market_data.high_24h.usd));
+      setCoinDayPrice(Math.floor(response.data.market_data.high_24h.usd))
       setIsLoading(false)
-    };
+    }
     getData();
   }, []);
 
