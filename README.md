@@ -2,7 +2,7 @@
 
 ## This is responsive react project using SCSS.
 
-## [You can see here](http://fervent-lamport-f2eef9.netlify.app)
+## [You can see here](https://coincurrency.netlify.app)
 
 ### What is this project ?
 
